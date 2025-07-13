@@ -1,0 +1,105 @@
+version: '3.8'
+
+services:
+  # Frontend Service (Production)
+  frontend:
+    build: 
+      context: ./SpeakoAIfront/speakoai
+      dockerfile: Dockerfile
+    container_name: speakoai-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_API_BASE_URL=http://localhost:8000
+    depends_on:
+      - backend
+    networks:
+      - speakoai-network
+
+  # Frontend Service (Development - uncomment to use)
+  # frontend-dev:
+  #   build: 
+  #     context: ./SpeakoAIfront/speakoai
+  #     dockerfile: Dockerfile.dev
+  #   container_name: speakoai-frontend-dev
+  #   ports:
+  #     - "3000:3000"
+  #   environment:
+  #     - VITE_API_BASE_URL=http://localhost:8000
+  #   depends_on:
+  #     - backend
+  #   volumes:
+  #     - ./SpeakoAIfront/speakoai:/app
+  #     - /app/node_modules
+  #   networks:
+  #     - speakoai-network
+
+  # Backend API Service
+  backend:
+    build: 
+      context: ./SpeakoAI
+      dockerfile: Dockerfile
+    container_name: speakoai-backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - ai-agent
+    env_file:
+      - ./SpeakoAI/.env
+    volumes:
+      - ./SpeakoAI/backend:/app/backend
+    networks:
+      - speakoai-network
+
+  # Go AI Agent Service
+  ai-agent:
+    build:
+      context: ./SpeakoAI/ai-agent
+      dockerfile: Dockerfile
+    container_name: speakoai-ai-agent
+    ports:
+      - "8085:8085"
+    env_file:
+      - ./SpeakoAI/.env
+    networks:
+      - speakoai-network
+
+  # Telegram Bot Service
+  telegram-bot:
+    build: 
+      context: ./SpeakoAI
+      dockerfile: Dockerfile
+    container_name: speakoai-telegram-bot
+    command: python backend/telegram_bot.py
+    depends_on:
+      - backend
+    volumes:
+      - ./SpeakoAI:/app
+    env_file:
+      - ./SpeakoAI/.env
+    networks:
+      - speakoai-network
+
+  # Database Service
+  db:
+    image: postgres:15
+    container_name: speakoai-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin1234
+      POSTGRES_DB: miniapp
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./SpeakoAI/populate_mock_data_fixed.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    networks:
+      - speakoai-network
+
+volumes:
+  pgdata:
+
+networks:
+  speakoai-network:
+    driver: bridge 
