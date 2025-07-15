@@ -1,0 +1,77 @@
+version: '3.8'
+
+services:
+  # Frontend Service (Development with hot reloading)
+  frontend:
+    build: 
+      context: ./SpeakoAIfront/speakoai
+      dockerfile: Dockerfile.dev
+    container_name: speakoai-frontend-dev
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_API_BASE_URL=http://localhost:8000
+    depends_on:
+      - backend
+    volumes:
+      - ./SpeakoAIfront/speakoai:/app
+      - /app/node_modules
+    networks:
+      - speakoai-network
+
+  # Backend API Service (Development with volume mount)
+  backend:
+    build: 
+      context: ./SpeakoAI
+      dockerfile: Dockerfile
+    container_name: speakoai-backend-dev
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - ai-agent
+    env_file:
+      - ./SpeakoAI/.env
+    volumes:
+      - ./SpeakoAI/backend:/app/backend
+      - ./SpeakoAI:/app
+    networks:
+      - speakoai-network
+
+  # Go AI Agent Service
+  ai-agent:
+    build:
+      context: ./SpeakoAI/ai-agent
+      dockerfile: Dockerfile
+    container_name: speakoai-ai-agent-dev
+    ports:
+      - "8080:8080"
+    env_file:
+      - ./SpeakoAI/.env
+    volumes:
+      - ./SpeakoAI/ai-agent:/app
+    networks:
+      - speakoai-network
+
+  # Database Service
+  db:
+    image: postgres:15
+    container_name: speakoai-db-dev
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin1234
+      POSTGRES_DB: miniapp
+    volumes:
+      - pgdata_dev:/var/lib/postgresql/data
+      - ./SpeakoAI/populate_mock_data_fixed.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    networks:
+      - speakoai-network
+
+volumes:
+  pgdata_dev:
+
+networks:
+  speakoai-network:
+    driver: bridge 
