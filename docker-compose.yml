@@ -1,58 +1,43 @@
-version: '3.8'
+version: "3.8"
 
 services:
-  # Frontend Service (Production)
-  frontend:
-    build: 
-      context: ./SpeakoAIfront/speakoai
+  telegram-bot:
+    build:
+      context: .
       dockerfile: Dockerfile
-    container_name: speakoai-frontend
-    ports:
-      - "3000:3000"
+    container_name: speakoai-telegram-bot
+    command: python SpeakoAI/backend/telegram_bot.py
+    volumes:
+      - .:/app
+    env_file:
+      - SpeakoAI/.env
     environment:
-      - VITE_API_BASE_URL=http://localhost:8000
+      - PYTHONPATH=/app/SpeakoAI
     depends_on:
       - backend
     networks:
       - speakoai-network
 
-  # Frontend Service (Development - uncomment to use)
-  # frontend-dev:
-  #   build: 
-  #     context: ./SpeakoAIfront/speakoai
-  #     dockerfile: Dockerfile.dev
-  #   container_name: speakoai-frontend-dev
-  #   ports:
-  #     - "3000:3000"
-  #   environment:
-  #     - VITE_API_BASE_URL=http://localhost:8000
-  #   depends_on:
-  #     - backend
-  #   volumes:
-  #     - ./SpeakoAIfront/speakoai:/app
-  #     - /app/node_modules
-  #   networks:
-  #     - speakoai-network
-
-  # Backend API Service
   backend:
-    build: 
-      context: ./SpeakoAI
+    build:
+      context: .
       dockerfile: Dockerfile
     container_name: speakoai-backend
+    command: uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
     ports:
       - "8000:8000"
+    volumes:
+      - .:/app
+    env_file:
+      - SpeakoAI/.env
+    environment:
+      - PYTHONPATH=/app/SpeakoAI
     depends_on:
       - db
       - ai-agent
-    env_file:
-      - ./SpeakoAI/.env
-    volumes:
-      - ./SpeakoAI/backend:/app/backend
     networks:
       - speakoai-network
 
-  # Go AI Agent Service
   ai-agent:
     build:
       context: ./SpeakoAI/ai-agent
@@ -65,23 +50,20 @@ services:
     networks:
       - speakoai-network
 
-  # Telegram Bot Service
-  telegram-bot:
-    build: 
-      context: ./SpeakoAI
+  frontend:
+    build:
+      context: ./SpeakoAIfront/speakoai
       dockerfile: Dockerfile
-    container_name: speakoai-telegram-bot
-    command: python backend/telegram_bot.py
+    container_name: speakoai-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_API_BASE_URL=http://localhost:8000
     depends_on:
       - backend
-    volumes:
-      - ./SpeakoAI:/app
-    env_file:
-      - ./SpeakoAI/.env
     networks:
       - speakoai-network
 
-  # Database Service
   db:
     image: postgres:15
     container_name: speakoai-db
@@ -102,4 +84,4 @@ volumes:
 
 networks:
   speakoai-network:
-    driver: bridge 
+    driver: bridge
