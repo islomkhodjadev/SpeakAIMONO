@@ -1,6 +1,6 @@
 ## For powershell, to get data for db container
 ```bash
-Get-Content ./SpeakoAI/populate_mock_data_fixed.sql | docker exec -i speakoai-db psql -U postgres -d miniapp
+Get-Content ./archive/populate_mock_data_fixed.sql | docker exec -i speakoai-db psql -U postgres -d miniapp
 ```
 
 
