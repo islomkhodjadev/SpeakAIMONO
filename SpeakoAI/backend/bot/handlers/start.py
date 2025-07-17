@@ -13,7 +13,6 @@ async def start_command(message: types.Message):
     user = message.from_user
 
     try:
-        # Check if user exists before creating
         existing_user = await get_user(user.id)
         if not existing_user:
             user_data = UserCreateSchema(
@@ -35,6 +34,7 @@ I'm your IELTS Speaking practice assistant. I can help you:
 Use these commands:
 /start - Show this welcome message
 
+/payment
 /price - Get pricing
 /adminpanel - Admin panel
 /checkadmin - Check if you're admin

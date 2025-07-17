@@ -10,3 +10,4 @@ __pycache__/
 *.db
 .DS_Store
 .idea/
+populate_mock_data_fixed.sql
