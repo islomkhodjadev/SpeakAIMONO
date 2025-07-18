@@ -11,9 +11,9 @@ import (
 func CreateRouterWithHandlers(handlerConfig *handlers.HandlerConfig) *chi.Mux {
 	r := chi.NewRouter()
 	r.Use(middlewares.LoggingMiddleware)
-	r.Post("/score", handlerConfig.Score)
-	r.Post("/start-session", handlerConfig.StartSession)
-	r.Post("/add-answer", handlerConfig.PostAnswer)
+	r.Post("v1/score", handlerConfig.Score)
+	r.Post("v1/start-session", handlerConfig.StartSession)
+	r.Post("v1/add-answer", handlerConfig.PostAnswer)
 	// Swagger UI route
 	r.Get("/swagger/*", httpSwagger.WrapHandler)
 

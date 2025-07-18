@@ -49,6 +49,8 @@ func (config *HandlerConfig) Score(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "not found id", http.StatusBadRequest)
 		return
 	}
+	config.RedisClient.Del(ctx, user_id)
+
 	fmt.Println(val)
 
 	result := gpt.GetAIResponse(val, config.GithubToken)
