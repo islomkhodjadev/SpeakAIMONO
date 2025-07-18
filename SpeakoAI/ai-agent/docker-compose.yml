@@ -1,0 +1,27 @@
+version: "3.8"
+
+
+services:
+  redis:
+    image: redis:latest
+    container_name: redis_ai_agent
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+  app:
+    build: .
+    container_name: go_ai_agent_app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
+    environment:
+      - AI_API=${AI_API}
+    volumes:
+    - .env:/root/.env
+
+volumes:
+  redis_data:

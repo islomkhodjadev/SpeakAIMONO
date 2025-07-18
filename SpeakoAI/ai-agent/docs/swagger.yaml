@@ -1,0 +1,158 @@
+basePath: /
+definitions:
+  handlers.ScoreRequest:
+    properties:
+      user_id:
+        example: "123"
+        type: string
+    type: object
+  handlers.ScoreResponse:
+    properties:
+      answer:
+        example: You performed well!
+        type: string
+    type: object
+  handlers.StartSessionRequest:
+    properties:
+      user_id:
+        example: "123"
+        type: string
+    type: object
+  handlers.StartSessionResponse:
+    properties:
+      error:
+        example: "false"
+        type: string
+      success:
+        example: "true"
+        type: string
+    type: object
+  models.Answer:
+    properties:
+      answer:
+        type: string
+      question:
+        type: string
+    type: object
+  models.AnswerRequest:
+    properties:
+      answer:
+        type: string
+      part:
+        type: integer
+      question:
+        type: string
+      user_id:
+        type: integer
+    type: object
+  models.Part:
+    properties:
+      answer:
+        items:
+          $ref: '#/definitions/models.Answer'
+        type: array
+      number:
+        type: integer
+    type: object
+  models.UserData:
+    properties:
+      part:
+        description: UserID int    `json:"user_id"`
+        items:
+          $ref: '#/definitions/models.Part'
+        type: array
+    type: object
+host: localhost:8080
+info:
+  contact: {}
+  description: API for managing AI scoring sessions and answers using chi and net/http.
+  title: AI Agent API
+  version: "1.0"
+paths:
+  /add-answer:
+    post:
+      consumes:
+      - application/json
+      description: Adds an answer to the user's session data in Redis
+      parameters:
+      - description: Answer payload
+        in: body
+        name: answer
+        required: true
+        schema:
+          $ref: '#/definitions/models.AnswerRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.UserData'
+        "400":
+          description: Invalid Json or Error getting user session
+          schema:
+            type: string
+        "500":
+          description: Error marshalling or saving updated user data
+          schema:
+            type: string
+      summary: Add an answer to the user session
+      tags:
+      - answer
+  /score:
+    post:
+      consumes:
+      - application/json
+      description: Returns an AI-generated score for the user's session data
+      parameters:
+      - description: User ID
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/handlers.ScoreRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/handlers.ScoreResponse'
+        "400":
+          description: not found id
+          schema:
+            type: string
+        "500":
+          description: Failed to marshal response
+          schema:
+            type: string
+      summary: Get AI score for a user session
+      tags:
+      - score
+  /start-session:
+    post:
+      consumes:
+      - application/json
+      description: Initializes a new session for the user in Redis
+      parameters:
+      - description: User ID payload
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/handlers.StartSessionRequest'
+      produces:
+      - application/json
+      responses:
+        "202":
+          description: Session started
+          schema:
+            $ref: '#/definitions/handlers.StartSessionResponse'
+        "400":
+          description: Missing or invalid user_id
+          schema:
+            type: string
+      summary: Start a new user session
+      tags:
+      - session
+swagger: "2.0"

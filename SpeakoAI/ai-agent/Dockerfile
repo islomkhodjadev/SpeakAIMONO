@@ -1,35 +1,27 @@
-# Go AI Agent Dockerfile for SpeakoAI
-FROM golang:1.23-alpine AS builder
+# Start from the official Golang image for building
+FROM golang:1.23 as builder
 
-# Set working directory
 WORKDIR /app
-RUN go mod init main
-# Copy go mod files
+
+# Copy go mod and sum files
 COPY go.mod go.sum ./
-
-# Initialize module and download dependencies
 RUN go mod download
-RUN go mod tidy
-
-# Copy source code
+# Copy the rest of the source code
 COPY . .
 
-# Build the application
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o ai_agent .
+# Build the Go app (output to /app/build/app)
+RUN CGO_ENABLED=0 GOOS=linux go build -o /app/build/app ./cmd/main.go
 
-# Final stage
+# Use a minimal base image for running
 FROM alpine:latest
-
-# Install ca-certificates for HTTPS requests
-RUN apk --no-cache add ca-certificates
-
 WORKDIR /root/
 
-# Copy the binary from builder stage
-COPY --from=builder /app/ai_agent .
+# Copy the built binary from the builder
+COPY --from=builder /app/build/app .
+COPY --from=builder /app/docs ./docs
 
-# Expose port
-EXPOSE 8080
+# Expose the port your app runs on
+EXPOSE 8085
 
-# Run the binary
-CMD ["./ai_agent"] 
+# Command to run the executable
+CMD ["./app"] 

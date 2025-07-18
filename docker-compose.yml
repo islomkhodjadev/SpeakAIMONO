@@ -38,6 +38,18 @@ services:
     networks:
       - speakoai-network
 
+  redis:
+    image: redis:latest
+    container_name: redis_ai_agent
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    networks:
+      - speakoai-network
+
+
   ai-agent:
     build:
       context: ./SpeakoAI/ai-agent
@@ -50,6 +62,8 @@ services:
     networks:
       - speakoai-network
 
+    depends_on:
+      - redis
   frontend:
     build:
       context: ./SpeakoAIfront/speakoai
@@ -83,6 +97,7 @@ services:
 
 volumes:
   pgdata:
+  redis_data:
 
 networks:
   speakoai-network:
