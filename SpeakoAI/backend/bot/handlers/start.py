@@ -1,9 +1,10 @@
-from aiogram import types, Router
+import logging
+
+from aiogram import Router, types
 from aiogram.filters import Command
+from backend.bot.keyboards import start_keyboard  # <- actual InlineKeyboardMarkup
 from backend.models.schemas.schemas import UserCreateSchema
 from backend.services.requests.user import create_user, get_user
-from backend.bot.keyboards import start_keyboard  # <- actual InlineKeyboardMarkup
-import logging
 
 router = Router()
 logger = logging.getLogger(__name__)

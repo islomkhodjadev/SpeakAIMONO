@@ -1,12 +1,13 @@
-from fastapi import HTTPException, Path, APIRouter
 from typing import List
 
 import backend.services.requests.user_response as rq
 from backend.models.schemas.schemas import (
-    UserResponseSchema,
     UserResponseCreateSchema,
+    UserResponseSchema,
     UserResponseUpdateSchema,
 )
+from fastapi import APIRouter, HTTPException, Path
+
 router = APIRouter(prefix="/api/responses", tags=["Responses"])
 
 @router.post("/", response_model=UserResponseSchema, status_code=201)

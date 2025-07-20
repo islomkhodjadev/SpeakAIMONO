@@ -1,12 +1,12 @@
-from fastapi import HTTPException, Path, APIRouter
 from typing import List
 
 import backend.services.requests.feedback as rq
 from backend.models.schemas.schemas import (
-    FeedbackSchema,
     FeedbackCreateSchema,
+    FeedbackSchema,
     FeedbackUpdateSchema,
 )
+from fastapi import APIRouter, HTTPException, Path
 
 router = APIRouter(prefix="/api/feedbacks", tags=["Feedbacks"])
 

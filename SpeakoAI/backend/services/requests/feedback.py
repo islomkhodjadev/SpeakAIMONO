@@ -1,14 +1,15 @@
-from sqlalchemy import select
-from fastapi import HTTPException
+from typing import List, Optional
 
-from backend.models.tables.feedback import Feedback
-from backend.models.tables.user import User
+from fastapi import HTTPException
+from sqlalchemy import select
 
 from backend.models.schemas.schemas import (
     FeedbackCreateSchema,
-    FeedbackSchema, FeedbackUpdateSchema
+    FeedbackSchema,
+    FeedbackUpdateSchema,
 )
-from typing import List, Optional
+from backend.models.tables.feedback import Feedback
+from backend.models.tables.user import User
 from backend.services.conn import connection
 
 

@@ -1,15 +1,15 @@
-from sqlalchemy import select
-from fastapi import HTTPException
-from backend.models.tables.question import Question
-from backend.models.schemas.schemas import (
-QuestionSchema, QuestionCreateSchema, QuestionUpdateSchema, QuestionWithResponsesSchema
-)
 from typing import List, Optional
+
+from fastapi import HTTPException
+from sqlalchemy import select
+
+from backend.models.schemas.schemas import (
+    QuestionCreateSchema,
+    QuestionSchema,
+    QuestionUpdateSchema,
+)
+from backend.models.tables.question import Question
 from backend.services.conn import connection
-
-
-
-
 
 
 # Question CRUD Operations

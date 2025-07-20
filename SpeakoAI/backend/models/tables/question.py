@@ -1,12 +1,11 @@
 
-from backend.core.db.models import Base
-from sqlalchemy import   func, String, Integer, Text
-from sqlalchemy.types import DateTime
-from sqlalchemy.orm import  Mapped, mapped_column, relationship
 import datetime
 
+from sqlalchemy import Integer, String, Text, func
+from sqlalchemy.orm import Mapped, mapped_column, relationship
+from sqlalchemy.types import DateTime
 
-
+from backend.core.db.models import Base
 
 
 class Question(Base):
@@ -18,6 +17,3 @@ class Question(Base):
     sample_answer: Mapped[str] = mapped_column(Text, nullable=True)
     category: Mapped[str] = mapped_column(String(100), nullable=True)  # e.g., "Family", "Work", "Hobbies"
     created_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now())
-
-    # Relationships
-    responses = relationship("UserResponse", back_populates="question")
