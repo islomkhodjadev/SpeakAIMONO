@@ -1,12 +1,12 @@
 import asyncio
 import logging
-from aiogram.client.default import DefaultBotProperties
+
 from aiogram import Bot, Dispatcher
+from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from aiogram.fsm.storage.memory import MemoryStorage
-from bot.handlers import start, admin, price, payment
+from bot.handlers import admin, start
 from config import settings
-
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
@@ -21,8 +21,7 @@ async def main():
 
     dp.include_router(start.router)
     dp.include_router(admin.router)
-    dp.include_router(price.router)
-    dp.include_router(payment.router)
+
 
     logger.info("🚀 SpeakoAI Bot is starting...")
     await dp.start_polling(bot)

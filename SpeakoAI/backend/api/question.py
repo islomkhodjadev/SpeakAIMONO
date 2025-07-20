@@ -1,13 +1,12 @@
-from fastapi import HTTPException, Path, APIRouter
 from typing import List
 
 import backend.services.requests.question as rq
-
 from backend.models.schemas.schemas import (
-    QuestionSchema,
     QuestionCreateSchema,
+    QuestionSchema,
     QuestionUpdateSchema,
 )
+from fastapi import APIRouter, HTTPException, Path
 
 router = APIRouter(prefix="/api/questions", tags=["Questions"])
 

@@ -75,6 +75,7 @@ func GetAIResponse(user_content, githubToken string) string {
 	// Log the raw response (useful for debugging)
 	fmt.Println("Raw response:", string(bodyBytes))
 
+
 	choices, ok := result["choices"].([]interface{})
 	if !ok || len(choices) == 0 {
 		log.Println("API Error or Unexpected Response Format:", string(bodyBytes))

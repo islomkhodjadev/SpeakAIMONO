@@ -1,0 +1,13 @@
+[tool.ruff]
+select = ["F", "E", "W", "I"]
+fix = true
+unfixable = []
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+
+[tool.ruff.lint]
+fixable = ["ALL"]

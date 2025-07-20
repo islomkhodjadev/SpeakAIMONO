@@ -1,6 +1,7 @@
-from pydantic import BaseModel, ConfigDict, Field
 from datetime import datetime
-from typing import Optional, List
+from typing import List, Optional
+
+from pydantic import BaseModel, ConfigDict, Field
 
 
 class QuestionSchema(BaseModel):
@@ -51,32 +52,22 @@ class UserUpdateSchema(BaseModel):
 
 class UserResponseSchema(BaseModel):
     id: int
-    user_id: int
-    question_id: int
-    response_text: str
-    audio_file_path: Optional[str] = None
-    fluency_score: Optional[float] = Field(None, ge=0, le=9)
-    pronunciation_score: Optional[float] = Field(None, ge=0, le=9)
-    grammar_score: Optional[float] = Field(None, ge=0, le=9)
-    vocabulary_score: Optional[float] = Field(None, ge=0, le=9)
-    overall_score: Optional[float] = Field(None, ge=0, le=9)
-    ai_feedback: Optional[str] = None
+    user_id: str
+    part: int
+    question: str
+    answer: Optional[str] = None
     created_at: datetime
 
     model_config = ConfigDict(from_attributes=True)
 
-
 class UserResponseCreateSchema(BaseModel):
-    user_id: int
-    question_id: int
-    response_text: str = Field(..., min_length=10)
-    audio_file_path: Optional[str] = None
-    fluency_score: Optional[float] = Field(None, ge=0, le=9)
-    pronunciation_score: Optional[float] = Field(None, ge=0, le=9)
-    grammar_score: Optional[float] = Field(None, ge=0, le=9)
-    vocabulary_score: Optional[float] = Field(None, ge=0, le=9)
-    overall_score: Optional[float] = Field(None, ge=0, le=9)
-    ai_feedback: Optional[str] = None
+    user_id: str
+    question: str
+    answer: str
+    part: int
+
+
+
 
 
 class UserResponseUpdateSchema(BaseModel):
@@ -133,5 +124,36 @@ class ScoreRequests(BaseModel):
     part: int
 
 
+
+
+
+
+
+
+
+
 class ScoreResponse(BaseModel):
     score:str
+
+
+
+
+
+
+
+class AddAnswerScheme(BaseModel):
+    answer: Optional[str]
+    part: int
+    question: Optional[str]
+    user_id: str
+
+
+
+class StartScheme(BaseModel):
+
+    user_id: str
+
+class ScoreScheme(BaseModel):
+
+    user_id: str
+

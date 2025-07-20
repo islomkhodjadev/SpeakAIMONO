@@ -1,6 +1,6 @@
 from aiogram import Router, types
 from aiogram.filters import Command
-from aiogram.types import LabeledPrice, CallbackQuery
+from aiogram.types import LabeledPrice
 
 router = Router()
 

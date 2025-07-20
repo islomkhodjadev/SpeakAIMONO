@@ -1,43 +1,44 @@
-from sqlalchemy import select
-from fastapi import HTTPException
-from backend.models.tables.question import Question
-from backend.models.schemas.schemas import (UserResponseCreateSchema,
-                                            UserResponseSchema, UserResponseUpdateSchema
-                                            )
 from typing import List, Optional
 
+from fastapi import HTTPException
+from sqlalchemy import select
+
+from backend.models.schemas.schemas import (
+    UserResponseCreateSchema,
+    UserResponseSchema,
+    UserResponseUpdateSchema,
+)
+from backend.models.tables.question import Question
 from backend.models.tables.user import User
 from backend.models.tables.user_response import UserResponse
 from backend.services.conn import connection
-
-
-
-
-
-# User Response CRUD Operations
 @connection
-async def create_user_response(session, response_data: UserResponseCreateSchema) -> UserResponseSchema:
+async def create_user_response(session, response_data: UserResponseCreateSchema) -> UserResponseCreateSchema:
     """Create a new user response"""
     try:
-        # Verify user and question exist
-        user = await session.scalar(select(User).where(User.id == response_data.user_id))
+        user = await session.scalar(select(User).where(User.tg_id == response_data.user_id))
         if not user:
             raise HTTPException(status_code=404, detail="User not found")
 
-        question = await session.scalar(select(Question).where(Question.id == response_data.question_id))
-        if not question:
-            raise HTTPException(status_code=404, detail="Question not found")
+        new_response = UserResponse(
+            user_id=response_data.user_id,
+            part=response_data.part,
+            question=response_data.question,
+            answer=response_data.answer,
+        )
 
-        new_response = UserResponse(**response_data.model_dump())
         session.add(new_response)
         await session.commit()
         await session.refresh(new_response)
+
         return UserResponseSchema.model_validate(new_response)
-    except HTTPException:
-        raise
+
     except Exception as e:
         await session.rollback()
-        raise HTTPException(status_code=400, detail=f"Error creating response: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+
 
 
 @connection

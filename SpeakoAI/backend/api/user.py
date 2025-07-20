@@ -1,12 +1,12 @@
-from fastapi import APIRouter, HTTPException, Path
 from typing import List
 
 import backend.services.requests.user as rq
 from backend.models.schemas.schemas import (
-    UserSchema,
     UserCreateSchema,
+    UserSchema,
     UserUpdateSchema,
 )
+from fastapi import APIRouter, HTTPException, Path
 
 router = APIRouter(prefix="/api/users", tags=["Users"])
 

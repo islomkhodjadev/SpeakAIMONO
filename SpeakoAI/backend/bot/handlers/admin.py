@@ -1,7 +1,8 @@
-from aiogram import types, Router
-from aiogram.filters import Command
-from backend.services.requests.user import create_user, get_user, get_all_users
 import logging
+
+from aiogram import Router, types
+from aiogram.filters import Command
+from backend.services.requests.user import get_all_users
 
 logger = logging.getLogger(__name__)
 ADMINS = {5514429658, 1099766821}

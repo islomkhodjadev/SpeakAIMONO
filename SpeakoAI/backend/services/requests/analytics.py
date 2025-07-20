@@ -1,19 +1,16 @@
-from sqlalchemy import select, func, desc
-from backend.models.tables.user import User
-from backend.models.tables.user_response import UserResponse
-from backend.models.tables.question import Question
+from typing import List, Optional
+
+from sqlalchemy import desc, func, select
+
 from backend.models.schemas.schemas import (
     QuestionSchema,
-    UserScoreSchema, QuestionWithResponsesSchema
+    QuestionWithResponsesSchema,
+    UserScoreSchema,
 )
-from typing import List, Optional
+from backend.models.tables.question import Question
+from backend.models.tables.user import User
+from backend.models.tables.user_response import UserResponse
 from backend.services.conn import connection
-
-
-
-
-
-
 
 # Analytics and Scoring Operations
 from backend.services.requests.user_response import get_responses_by_question

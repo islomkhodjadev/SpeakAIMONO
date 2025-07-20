@@ -1,9 +1,11 @@
 
-from backend.core.db.models import Base
-from sqlalchemy import  ForeignKey, func, Text
-from sqlalchemy.types import DateTime
-from sqlalchemy.orm import  Mapped, mapped_column, relationship
 import datetime
+
+from sqlalchemy import ForeignKey, Text, func
+from sqlalchemy.orm import Mapped, mapped_column, relationship
+from sqlalchemy.types import DateTime
+
+from backend.core.db.models import Base
 
 
 class Feedback(Base):
