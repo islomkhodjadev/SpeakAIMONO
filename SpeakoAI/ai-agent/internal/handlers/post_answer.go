@@ -5,7 +5,6 @@ import (
 	"context"
 	"encoding/json"
 	"net/http"
-	"strconv"
 )
 
 // PostAnswer godoc
@@ -32,7 +31,7 @@ func (config *HandlerConfig) PostAnswer(w http.ResponseWriter, r *http.Request) 
 
 	var user_data models.UserData
 
-	user_id := strconv.Itoa(answer.UserID)
+	user_id := answer.UserID
 	val, err := config.RedisClient.Get(ctx, user_id).Result()
 
 	if err != nil {

@@ -36,7 +36,7 @@ type Answer struct {
 }
 
 type AnswerRequest struct {
-	UserID   int    `json:"user_id"`
+	UserID   string `json:"user_id"`
 	Part     int    `json:"part"`
 	Question string `json:"question"`
 	Answer   string `json:"answer"`
