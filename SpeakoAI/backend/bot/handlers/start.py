@@ -14,10 +14,11 @@ async def start_command(message: types.Message):
     user = message.from_user
 
     try:
-        existing_user = await get_user(user.id)
+        u_id = str(user.id)
+        existing_user = await get_user(u_id)
         if not existing_user:
             user_data = UserCreateSchema(
-                tg_id=user.id,
+                tg_id=u_id,
                 first_name=user.first_name,
                 username=user.username,
             )

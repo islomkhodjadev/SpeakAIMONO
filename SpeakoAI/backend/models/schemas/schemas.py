@@ -31,7 +31,7 @@ class QuestionUpdateSchema(BaseModel):
 
 class UserSchema(BaseModel):
     id: int
-    tg_id: int
+    tg_id: str
     first_name: str
     username: Optional[str] = None
     created_at: datetime
@@ -40,7 +40,7 @@ class UserSchema(BaseModel):
 
 
 class UserCreateSchema(BaseModel):
-    tg_id: int = Field(..., description="Telegram user ID")
+    tg_id: str = Field(..., description="Telegram user ID")
     first_name: str = Field(..., min_length=1, max_length=25)
     username: Optional[str] = Field(None, max_length=50)
 
