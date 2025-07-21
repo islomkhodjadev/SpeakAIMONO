@@ -12,6 +12,8 @@ RUN npm ci
 
 # Copy source code
 COPY . .
+RUN npm install react-markdown
+RUN npm install -D @tailwindcss/typography
 
 # Build the app
 RUN npm run build

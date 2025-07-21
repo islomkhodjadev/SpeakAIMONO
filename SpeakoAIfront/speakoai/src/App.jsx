@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import HomeScreen from './components/HomeScreen';
 import QuestionScreen from './components/QuestionScreen';
 import FeedbackScreen from './components/FeedbackScreen';
+import { getTelegramId, getTelegramUser } from './utils/telegram';
 
 const API_BASE = 'http://localhost:8000/api';
 
@@ -36,6 +37,15 @@ export default function App() {
   const [mockQuestions, setMockQuestions] = useState([[], [], []]);
   const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    const user = getTelegramUser();
+    fetch(`${API_BASE}/users`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(user)
+    }).catch(() => { });
+  }, []);
+
   // Fetch questions for a part
   const fetchQuestions = async (part) => {
     setLoading(true);
@@ -67,6 +77,17 @@ export default function App() {
 
   // Handlers for HomeScreen
   const handleSelectFullExam = async () => {
+    const tg_id = getTelegramId();
+    // Start session for mock
+    try {
+      await fetch(`${API_BASE}/ai/start-session`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ user_id: tg_id || 'test_user' })
+      });
+    } catch (e) {
+      // Optionally handle error
+    }
     setMode('MOCK');
     setMockPartIdx(0);
     setMockQuestionIdx(0);
@@ -77,6 +98,17 @@ export default function App() {
   };
 
   const handleSelectPart = async (partName) => {
+    const tg_id = getTelegramId();
+    // Start session for part
+    try {
+      await fetch(`${API_BASE}/ai/start-session`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ user_id: tg_id || 'test_user' })
+      });
+    } catch (e) {
+      alert(e)
+    }
     setMode('SECTION');
     setCurrentPart(partName);
     setQuestionIdx(0);
@@ -122,6 +154,7 @@ export default function App() {
     // });
   };
 
+  // Handler for Next button
   const handleNext = () => {
     if (mode === 'SECTION') {
       if (questionIdx < questions.length - 1) {
@@ -143,6 +176,24 @@ export default function App() {
       } else {
         setScreen(screens.COMPLETE);
       }
+    }
+  };
+
+  // Handler for Evaluate button
+  const handleEvaluate = async () => {
+    const tg_id = getTelegramId();
+    try {
+      const res = await fetch(`${API_BASE}/ai/score`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ user_id: tg_id || 'test_user' })
+      });
+      const data = await res.json();
+      setFeedback(data.answer)
+    
+      setScreen(screens.FEEDBACK)
+      } catch (e) {
+      alert('Error evaluating answers.');
     }
   };
 
@@ -187,14 +238,15 @@ export default function App() {
           part={currentPart}
           question={question}
           questionId={questionId}
-          onSubmitAnswer={handleSubmitAnswer}
+          onAnswerSent={null}
+          onNextQuestion={handleNext}
+          onEvaluate={handleEvaluate}
           loading={loading}
         />
       )}
       {screen === screens.FEEDBACK && (
         <FeedbackScreen
           feedback={feedback}
-          onNextQuestion={handleNext}
           onHome={handleHome}
         />
       )}

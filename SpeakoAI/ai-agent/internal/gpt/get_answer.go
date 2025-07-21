@@ -18,16 +18,16 @@ func GetAIResponse(user_content, githubToken string) string {
 			{
 				"role": "system",
 				"content": `
-								First of all write full answer within 200 words thats it.
+								First of all write full answer within 200 words thats it.NEVER NEVER include sign like double star or hashtag *, # only allowed are <br> html tags to make to next paragraph so after every section add <br> tags you must add <br>.
 								Evaluate the speaking performance of the candidate based on the IELTS Speaking Band Descriptors criteria provided. 
 								The candidate’s speaking responses are given in JSON format structured by parts and questions. 
 								Parse and analyze each response precisely and concisely without extraneous commentary.
 								For each part (Part 1, Part 2, Part 3), provide strictly the following:
 
-								1. **Fluency and Coherence Score (1-9)**: Brief justification using specific examples.
-								2. **Lexical Resource Score (1-9)**: Brief justification using specific examples.
-								3. **Grammatical Range and Accuracy Score (1-9)**: Brief justification using specific examples.
-								4. **Pronunciation Score (1-9)**: Brief justification using specific examples.
+								1. Fluency and Coherence Score (1-9): Brief justification using specific examples. <br>
+								2. Lexical Resource Score (1-9): Brief justification using specific examples.<br>
+								3. Grammatical Range and Accuracy Score (1-9): Brief justification using specific examples.<br>
+								4. Pronunciation Score (1-9): Brief justification using specific examples.<br>
 
 								Calculate and state clearly an average band score for each part.
 
@@ -74,7 +74,6 @@ func GetAIResponse(user_content, githubToken string) string {
 
 	// Log the raw response (useful for debugging)
 	fmt.Println("Raw response:", string(bodyBytes))
-
 
 	choices, ok := result["choices"].([]interface{})
 	if !ok || len(choices) == 0 {

@@ -1,16 +1,76 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import { getTelegramId } from '../utils/telegram';
+const API_BASE = 'http://localhost:8000/api';
 
-export default function QuestionScreen({ part, question, questionId, onSubmitAnswer, loading }) {
-    const [answer, setAnswer] = useState('');
-    const [submitting, setSubmitting] = useState(false);
+function getPartNumber(part) {
+    if (typeof part === 'number') return part;
+    if (part === 'PART 1') return 1;
+    if (part === 'PART 2') return 2;
+    if (part === 'PART 3') return 3;
+    return 1;
+}
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        if (!answer.trim()) return;
-        setSubmitting(true);
-        await onSubmitAnswer(answer);
-        setSubmitting(false);
-        setAnswer('');
+export default function QuestionScreen({ part, question, questionId, onAnswerSent, onNextQuestion, onEvaluate, loading }) {
+    const [isRecording, setIsRecording] = useState(false);
+    const [mediaRecorder, setMediaRecorder] = useState(null);
+    const [audioURL, setAudioURL] = useState(null);
+    const [sending, setSending] = useState(false);
+    const [answerSent, setAnswerSent] = useState(false);
+    const audioChunks = useRef([]);
+
+    const handleStartRecording = async () => {
+        if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+            alert('Audio recording is not supported in this browser.');
+            return;
+        }
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        const recorder = new window.MediaRecorder(stream);
+        recorder.ondataavailable = (e) => {
+            if (e.data.size > 0) {
+                audioChunks.current.push(e.data);
+            }
+        };
+        recorder.onstop = async () => {
+            const audioBlob = new Blob(audioChunks.current, { type: 'audio/webm' });
+            setAudioURL(URL.createObjectURL(audioBlob));
+            await sendAudioAnswer(audioBlob);
+            audioChunks.current = [];
+        };
+        audioChunks.current = [];
+        setMediaRecorder(recorder);
+        recorder.start();
+        setIsRecording(true);
+    };
+
+    const handleStopRecording = () => {
+        if (mediaRecorder) {
+            mediaRecorder.stop();
+            setIsRecording(false);
+        }
+    };
+
+    const sendAudioAnswer = async (audioBlob) => {
+        setSending(true);
+        setAnswerSent(true); // Always show Next/Evaluate after recording
+        const tg_id = getTelegramId();
+        const formData = new FormData();
+        formData.append('user_id', tg_id || 'test_user');
+        formData.append('part', getPartNumber(part)); // ensure integer
+        formData.append('question', questionId);
+        formData.append('file', audioBlob, 'answer.webm'); // field must be 'file'
+        try {
+            const res = await fetch(`${API_BASE}/ai/add-answer`, {
+                method: 'POST',
+                body: formData
+            });
+            onAnswerSent && onAnswerSent();
+            if (!res.ok) {
+                alert('Failed to send answer.');
+            }
+        } catch (e) {
+            alert('Error sending answer.');
+        }
+        setSending(false);
     };
 
     if (loading) {
@@ -23,26 +83,35 @@ export default function QuestionScreen({ part, question, questionId, onSubmitAns
     }
 
     return (
-        <form className="w-full max-w-xs flex flex-col gap-8 items-center" onSubmit={handleSubmit}>
+        <div className="w-full max-w-xs flex flex-col gap-8 items-center">
             <div className="text-blue-700 font-semibold text-center">{part}</div>
             <div className="w-full bg-blue-50 rounded-xl p-6 shadow text-blue-900 text-lg font-medium text-center min-h-[100px] flex items-center justify-center">
                 {question}
             </div>
-            <textarea
-                className="w-full rounded-lg border border-blue-300 p-3 min-h-[80px] focus:outline-none focus:ring-2 focus:ring-blue-400"
-                placeholder="Type your answer here..."
-                value={answer}
-                onChange={e => setAnswer(e.target.value)}
-                disabled={submitting}
-                required
-            />
-            <button
-                className="w-full py-3 rounded-xl bg-blue-600 text-white font-semibold transition hover:bg-blue-700 disabled:opacity-60"
-                type="submit"
-                disabled={submitting || !answer.trim()}
-            >
-                {submitting ? 'Submitting...' : 'Submit Answer'}
-            </button>
-        </form>
+            <div className="flex flex-col items-center gap-2">
+                {!isRecording && (
+                    <button className="w-32 py-3 rounded-xl bg-blue-600 text-white font-semibold transition hover:bg-blue-700" onClick={handleStartRecording} disabled={sending}>
+                        Start Recording
+                    </button>
+                )}
+                {isRecording && (
+                    <button className="w-32 py-3 rounded-xl bg-red-600 text-white font-semibold transition hover:bg-red-700 animate-pulse" onClick={handleStopRecording}>
+                        Stop Recording
+                    </button>
+                )}
+                {audioURL && (
+                    <audio controls src={audioURL} className="mt-2" />
+                )}
+                {sending && <div className="text-blue-700 font-semibold">Sending...</div>}
+                {answerSent && (
+                    <button className="w-32 py-3 rounded-xl bg-green-600 text-white font-semibold transition hover:bg-green-700 mt-4" onClick={onNextQuestion}>
+                        Next
+                    </button>
+                )}
+                <button className="w-32 py-3 rounded-xl bg-purple-600 text-white font-semibold transition hover:bg-purple-700 mt-2" onClick={onEvaluate}>
+                    Evaluate
+                </button>
+            </div>
+        </div>
     );
 } 

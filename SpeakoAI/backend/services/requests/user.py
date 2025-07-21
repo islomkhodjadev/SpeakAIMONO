@@ -18,7 +18,9 @@ async def create_user(session, user_data: UserCreateSchema) -> UserSchema:
     """Create a new user"""
     try:
         # Check if user already exists
-        existing_user = await session.scalar(select(User).where(User.tg_id == user_data.tg_id))
+        existing_user = await session.scalar(
+            select(User).where(User.tg_id == user_data.tg_id)
+        )
         if existing_user:
             return UserSchema.model_validate(existing_user)
 
@@ -59,7 +61,9 @@ async def get_all_users(session) -> List[UserSchema]:
 
 
 @connection
-async def update_user(session, tg_id: str, user_data: UserUpdateSchema) -> Optional[UserSchema]:
+async def update_user(
+    session, tg_id: str, user_data: UserUpdateSchema
+) -> Optional[UserSchema]:
     """Update user by Telegram ID"""
     user = await session.scalar(select(User).where(User.tg_id == tg_id))
     if not user:
@@ -84,4 +88,3 @@ async def delete_user(session, tg_id: str) -> bool:
     await session.delete(user)
     await session.commit()
     return True
-
