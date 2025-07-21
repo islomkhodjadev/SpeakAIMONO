@@ -64,13 +64,13 @@ app.include_router(voice_to_text.router)
 
 @app.post("/api/telegram/user", response_model=UserSchema, tags=["Telegram Integration"])
 async def create_telegram_user(
-        tg_id: int = Query(..., description="Telegram user ID"),
+        tg_id: str = Query(..., description="Telegram user ID"),
         first_name: str = Query(..., description="User's first name"),
         username: Optional[str] = Query(None, description="Telegram username"),
 ):
     return await rq.set_user(tg_id, first_name, username)
 
 
-# --- MAIN ---
+
 if __name__ == "__main__":
     uvicorn.run("backend.main:app", host="0.0.0.0", port=8000, reload=True)

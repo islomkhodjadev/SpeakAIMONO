@@ -5,21 +5,26 @@ from aiogram.filters import Command
 from backend.services.requests.user import get_all_users
 
 logger = logging.getLogger(__name__)
-ADMINS = {5514429658, 1099766821}
+ADMINS = {'5514429658', '1099766821'}
 
 router = Router()
 
 @router.message(Command("checkadmin"))
 async def check_admin(message: types.Message):
-    if message.from_user.id not in ADMINS:
+    tg_id = str(message.from_user.id)
+    if tg_id not in ADMINS:
         await message.answer("🚫 get out of here")
     else:
         await message.answer("✅ You are admin.")
 @router.message(Command("adminpanel"))
 async def admin_panel_command(message: types.Message):
-    if message.from_user.id not in ADMINS:
-        await message.answer("🚫 Access denied.")
-        return
+    tg_id = str(message.from_user.id)
+    if tg_id not in ADMINS:
+        await message.answer("🚫 get out of here")
+    else:
+        await message.answer("✅ You are admin.")
+
+
 
     try:
         users = await get_all_users()  # import this properly

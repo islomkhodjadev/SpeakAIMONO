@@ -9,11 +9,11 @@
 
 -- Insert mock users
 INSERT INTO users (tg_id, first_name, username, created_at) VALUES
-(1001, 'Alice Johnson', 'alice_j', NOW()),
-(1002, 'Bob Smith', 'bob_smith', NOW()),
-(1003, 'Carol Davis', 'carol_d', NOW()),
-(1004, 'David Wilson', 'david_w', NOW()),
-(1005, 'Emma Brown', 'emma_b', NOW())
+('1001', 'Alice Johnson', 'alice_j', NOW()),
+('1002', 'Bob Smith', 'bob_smith', NOW()),
+('1003', 'Carol Davis', 'carol_d', NOW()),
+('1004', 'David Wilson', 'david_w', NOW()),
+('1005', 'Emma Brown', 'emma_b', NOW())
 ON CONFLICT (tg_id) DO NOTHING;
 
 -- Insert Part 1 Questions (Personal Information)
@@ -89,7 +89,7 @@ INSERT INTO feedbacks (user_id, ai_comment, created_at) VALUES
 SELECT 'Mock data population completed!' as status;
 
 -- Show summary statistics
-SELECT 'Users created: ' || COUNT(*) as summary FROM users WHERE tg_id IN (1001, 1002, 1003, 1004, 1005)
+SELECT 'Users created: ' || COUNT(*) as summary FROM users WHERE tg_id IN ('1001', '1002', '1003', '1004', '1005')
 UNION ALL
 SELECT 'Questions created: ' || COUNT(*) as summary FROM questions
 UNION ALL

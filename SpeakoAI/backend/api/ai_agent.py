@@ -6,6 +6,7 @@ from backend.models.schemas.schemas import ScoreScheme, StartScheme, UserRespons
 from fastapi import APIRouter, File, Form, UploadFile
 from fastapi.responses import JSONResponse
 from backend.services.requests.user_response import create_user_response
+from backend.services.requests.question import get_question
 
 router = APIRouter(prefix="/api/ai", tags=["AI Agent"])
 
@@ -71,7 +72,7 @@ async def add_answer(
         file: UploadFile = File(...),
         user_id: str = Form(...),
         part: int = Form(...),
-        question: Optional[str] = Form(None),
+        question: int = Form(...),
 ):
     try:
         transcribe_timeout = httpx.Timeout(120.0)
@@ -89,17 +90,23 @@ async def add_answer(
             return JSONResponse(status_code=400, content={"error": "Transcription failed"})
 
         # 2. Send transcribed answer to AI agent
+        question_obj = await get_question(question)
+        print(question_obj)
+        if not question_obj:
+            return JSONResponse(status_code=404, content={"error": "Question not found"})
+
         payload = {
             "answer": text,
             "user_id": str(user_id),
             "part": part,
-            "question": question
+            "question": question_obj.question_text
         }
+        logger.info(f"Question was : {question_obj}")
 
         response_data = UserResponseCreateSchema(
             user_id=str(user_id),
             part=part,
-            question=question,
+            question=str(question_obj.question_text),
             answer=text,
         )
         await create_user_response(response_data=response_data)
@@ -132,7 +139,6 @@ async def get_score(score: ScoreScheme):
     logger.info(f"📦 Payload: {payload}")
 
     try:
-        # Set a longer timeout for AI scoring (2 minutes)
         timeout = httpx.Timeout(AI_SERVICE_TIMEOUT["score"])
 
         async with httpx.AsyncClient(timeout=timeout) as client:
@@ -145,6 +151,7 @@ async def get_score(score: ScoreScheme):
 
             data = response.json()
             return data
+
 
     except httpx.TimeoutException as e:
         logger.error(f"⏰ Timeout error after {AI_SERVICE_TIMEOUT['score']} seconds: {str(e)}")

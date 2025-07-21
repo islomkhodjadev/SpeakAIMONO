@@ -22,7 +22,7 @@ async def get_all_users():
 
 
 @router.get("/{tg_id}", response_model=UserSchema)
-async def get_user(tg_id: int = Path(..., description="Telegram user ID")):
+async def get_user(tg_id: str = Path(..., description="Telegram user ID")):
     user = await rq.get_user(tg_id)
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
@@ -31,7 +31,7 @@ async def get_user(tg_id: int = Path(..., description="Telegram user ID")):
 
 @router.put("/{tg_id}", response_model=UserSchema)
 async def update_user(
-    tg_id: int = Path(..., description="Telegram user ID"),
+    tg_id: str = Path(..., description="Telegram user ID"),
     user_data: UserUpdateSchema = None,
 ):
     user = await rq.update_user(tg_id, user_data)
@@ -41,7 +41,7 @@ async def update_user(
 
 
 @router.delete("/{tg_id}")
-async def delete_user(tg_id: int = Path(..., description="Telegram user ID")):
+async def delete_user(tg_id: str = Path(..., description="Telegram user ID")):
     success = await rq.delete_user(tg_id)
     if not success:
         raise HTTPException(status_code=404, detail="User not found")

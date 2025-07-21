@@ -33,7 +33,7 @@ async def create_user(session, user_data: UserCreateSchema) -> UserSchema:
 
 
 @connection
-async def get_user(session, tg_id: int) -> Optional[UserSchema]:
+async def get_user(session, tg_id: str) -> Optional[UserSchema]:
     """Get user by Telegram ID"""
     user = await session.scalar(select(User).where(User.tg_id == tg_id))
     if not user:
@@ -59,7 +59,7 @@ async def get_all_users(session) -> List[UserSchema]:
 
 
 @connection
-async def update_user(session, tg_id: int, user_data: UserUpdateSchema) -> Optional[UserSchema]:
+async def update_user(session, tg_id: str, user_data: UserUpdateSchema) -> Optional[UserSchema]:
     """Update user by Telegram ID"""
     user = await session.scalar(select(User).where(User.tg_id == tg_id))
     if not user:
@@ -75,7 +75,7 @@ async def update_user(session, tg_id: int, user_data: UserUpdateSchema) -> Optio
 
 
 @connection
-async def delete_user(session, tg_id: int) -> bool:
+async def delete_user(session, tg_id: str) -> bool:
     """Delete user by Telegram ID"""
     user = await session.scalar(select(User).where(User.tg_id == tg_id))
     if not user:
