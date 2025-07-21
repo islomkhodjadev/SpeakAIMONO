@@ -90,26 +90,61 @@ export default function QuestionScreen({ part, question, questionId, onAnswerSen
             </div>
             <div className="flex flex-col items-center gap-2">
                 {!isRecording && (
-                    <button className="w-32 py-3 rounded-xl bg-blue-600 text-white font-semibold transition hover:bg-blue-700" onClick={handleStartRecording} disabled={sending}>
+                    <button
+                        className={`w-32 py-3 rounded-xl bg-blue-600 text-white font-semibold transition hover:bg-blue-700 shadow-lg active:scale-95 focus:outline-none border-b-4 border-blue-800 ${sending ? 'opacity-60 cursor-not-allowed' : ''}`}
+                        onClick={handleStartRecording}
+                        disabled={sending || loading}
+                    >
                         Start Recording
                     </button>
                 )}
                 {isRecording && (
-                    <button className="w-32 py-3 rounded-xl bg-red-600 text-white font-semibold transition hover:bg-red-700 animate-pulse" onClick={handleStopRecording}>
+                    <button
+                        className="w-32 py-3 rounded-xl bg-red-600 text-white font-semibold transition hover:bg-red-700 animate-pulse shadow-lg active:scale-95 focus:outline-none border-b-4 border-red-800"
+                        onClick={handleStopRecording}
+                    >
                         Stop Recording
                     </button>
                 )}
                 {audioURL && (
                     <audio controls src={audioURL} className="mt-2" />
                 )}
-                {sending && <div className="text-blue-700 font-semibold">Sending...</div>}
+                {(sending || loading) && (
+                    <div className="flex items-center gap-2 mt-2">
+                        <span className="text-blue-700 font-semibold">Processing</span>
+                        <span className="flex space-x-1">
+                            <span className="inline-block w-2 h-2 bg-blue-600 rounded-full animate-bounce" style={{ animationDelay: '0s' }}></span>
+                            <span className="inline-block w-2 h-2 bg-blue-600 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></span>
+                            <span className="inline-block w-2 h-2 bg-blue-600 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></span>
+                        </span>
+                    </div>
+                )}
                 {answerSent && (
-                    <button className="w-32 py-3 rounded-xl bg-green-600 text-white font-semibold transition hover:bg-green-700 mt-4" onClick={onNextQuestion}>
+                    <button
+                        className={`w-32 py-3 rounded-xl bg-green-600 text-white font-semibold transition hover:bg-green-700 mt-4 shadow-lg active:scale-95 focus:outline-none border-b-4 border-green-800 ${sending || loading ? 'opacity-60 cursor-not-allowed' : ''}`}
+                        onClick={onNextQuestion}
+                        disabled={sending || loading}
+                    >
                         Next
                     </button>
                 )}
-                <button className="w-32 py-3 rounded-xl bg-purple-600 text-white font-semibold transition hover:bg-purple-700 mt-2" onClick={onEvaluate}>
-                    Evaluate
+                <button
+                    className={`w-32 py-3 rounded-xl bg-purple-600 text-white font-semibold transition hover:bg-purple-700 mt-2 shadow-lg active:scale-95 focus:outline-none border-b-4 border-purple-800 ${(sending || loading || isRecording) ? 'opacity-60 cursor-not-allowed' : ''}`}
+                    onClick={onEvaluate}
+                    disabled={sending || loading || isRecording}
+                >
+                    {loading ? (
+                        <span className="flex items-center justify-center">
+                            <span>Evaluate</span>
+                            <span className="flex space-x-1 ml-2">
+                                <span className="inline-block w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: '0s' }}></span>
+                                <span className="inline-block w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></span>
+                                <span className="inline-block w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></span>
+                            </span>
+                        </span>
+                    ) : (
+                        'Evaluate'
+                    )}
                 </button>
             </div>
         </div>

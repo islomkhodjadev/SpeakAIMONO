@@ -181,6 +181,7 @@ export default function App() {
 
   // Handler for Evaluate button
   const handleEvaluate = async () => {
+    setLoading(true);
     const tg_id = getTelegramId();
     try {
       const res = await fetch(`${API_BASE}/ai/score`, {
@@ -190,11 +191,11 @@ export default function App() {
       });
       const data = await res.json();
       setFeedback(data.answer)
-    
       setScreen(screens.FEEDBACK)
-      } catch (e) {
+    } catch (e) {
       alert('Error evaluating answers.');
     }
+    setLoading(false);
   };
 
   const handleHome = () => {
