@@ -1,8 +1,5 @@
 from typing import List, Optional
 
-from fastapi import HTTPException
-from sqlalchemy import select
-
 from backend.models.schemas.schemas import (
     QuestionCreateSchema,
     QuestionSchema,
@@ -10,6 +7,8 @@ from backend.models.schemas.schemas import (
 )
 from backend.models.tables.question import Question
 from backend.services.conn import connection
+from fastapi import HTTPException
+from sqlalchemy import select
 
 
 # Question CRUD Operations
@@ -58,6 +57,10 @@ async def get_questions_by_category(session, category: str) -> List[QuestionSche
     result = await session.execute(select(Question).where(Question.category == category).order_by(Question.id))
     questions = result.scalars().all()
     return [QuestionSchema.model_validate(q) for q in questions]
+
+
+
+
 
 
 @connection

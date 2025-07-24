@@ -1,0 +1,3129 @@
+[
+  {
+    "id": 1,
+    "part": 1,
+    "question_text": "What is your job?",
+    "extra_text": null,
+    "category_id": 68
+  },
+  {
+    "id": 2,
+    "part": 1,
+    "question_text": "Where do you work?",
+    "extra_text": null,
+    "category_id": 68
+  },
+  {
+    "id": 3,
+    "part": 1,
+    "question_text": "Why did you choose that job?",
+    "extra_text": null,
+    "category_id": 68
+  },
+  {
+    "id": 4,
+    "part": 1,
+    "question_text": "Is it a popular job in your country?",
+    "extra_text": null,
+    "category_id": 68
+  },
+  {
+    "id": 5,
+    "part": 1,
+    "question_text": "Do you like your job?",
+    "extra_text": null,
+    "category_id": 68
+  },
+  {
+    "id": 6,
+    "part": 1,
+    "question_text": "Do you get on well with your colleagues?",
+    "extra_text": null,
+    "category_id": 68
+  },
+  {
+    "id": 7,
+    "part": 1,
+    "question_text": "What was your first day like?",
+    "extra_text": null,
+    "category_id": 68
+  },
+  {
+    "id": 8,
+    "part": 1,
+    "question_text": "What responsibilities do you have at work?",
+    "extra_text": null,
+    "category_id": 68
+  },
+  {
+    "id": 9,
+    "part": 1,
+    "question_text": "If you had the chance, would you change your job?",
+    "extra_text": null,
+    "category_id": 68
+  },
+  {
+    "id": 10,
+    "part": 1,
+    "question_text": "Do you plan to continue with your job in the future?",
+    "extra_text": null,
+    "category_id": 68
+  },
+  {
+    "id": 11,
+    "part": 1,
+    "question_text": "What do you study?",
+    "extra_text": null,
+    "category_id": 58
+  },
+  {
+    "id": 12,
+    "part": 1,
+    "question_text": "Where do you study that?",
+    "extra_text": null,
+    "category_id": 58
+  },
+  {
+    "id": 13,
+    "part": 1,
+    "question_text": "Why did you choose that subject?",
+    "extra_text": null,
+    "category_id": 58
+  },
+  {
+    "id": 14,
+    "part": 1,
+    "question_text": "Is it a popular subject in your country?",
+    "extra_text": null,
+    "category_id": 58
+  },
+  {
+    "id": 15,
+    "part": 1,
+    "question_text": "Do you like that subject?",
+    "extra_text": null,
+    "category_id": 58
+  },
+  {
+    "id": 16,
+    "part": 1,
+    "question_text": "Do you get on with your colleagues?",
+    "extra_text": null,
+    "category_id": 58
+  },
+  {
+    "id": 17,
+    "part": 1,
+    "question_text": "What was your first day like?",
+    "extra_text": null,
+    "category_id": 58
+  },
+  {
+    "id": 18,
+    "part": 1,
+    "question_text": "What are the main aspects of your subject?",
+    "extra_text": null,
+    "category_id": 58
+  },
+  {
+    "id": 19,
+    "part": 1,
+    "question_text": "If you had the chance, would you change subject?",
+    "extra_text": null,
+    "category_id": 58
+  },
+  {
+    "id": 20,
+    "part": 1,
+    "question_text": "Do you plan to get a job in the same field as your subject?",
+    "extra_text": null,
+    "category_id": 58
+  },
+  {
+    "id": 21,
+    "part": 1,
+    "question_text": "Where is your hometown?",
+    "extra_text": null,
+    "category_id": 30
+  },
+  {
+    "id": 22,
+    "part": 1,
+    "question_text": "Do you like your hometown?",
+    "extra_text": null,
+    "category_id": 30
+  },
+  {
+    "id": 23,
+    "part": 1,
+    "question_text": "Do you often visit your hometown?",
+    "extra_text": null,
+    "category_id": 30
+  },
+  {
+    "id": 24,
+    "part": 1,
+    "question_text": "What is your hometown like?",
+    "extra_text": null,
+    "category_id": 30
+  },
+  {
+    "id": 25,
+    "part": 1,
+    "question_text": "What is the oldest place in your hometown?",
+    "extra_text": null,
+    "category_id": 30
+  },
+  {
+    "id": 26,
+    "part": 1,
+    "question_text": "What is there for a foreigner to do or see in your hometown?",
+    "extra_text": null,
+    "category_id": 30
+  },
+  {
+    "id": 27,
+    "part": 1,
+    "question_text": "How could your hometown be improved?",
+    "extra_text": null,
+    "category_id": 30
+  },
+  {
+    "id": 28,
+    "part": 1,
+    "question_text": "Has your hometown changed much since you were a child?",
+    "extra_text": null,
+    "category_id": 30
+  },
+  {
+    "id": 29,
+    "part": 1,
+    "question_text": "Is there good public transportation in your hometown?",
+    "extra_text": null,
+    "category_id": 30
+  },
+  {
+    "id": 30,
+    "part": 1,
+    "question_text": "Do you think your hometown is a good place to bring up children?",
+    "extra_text": null,
+    "category_id": 30
+  },
+  {
+    "id": 31,
+    "part": 1,
+    "question_text": "Where is your home?",
+    "extra_text": null,
+    "category_id": 29
+  },
+  {
+    "id": 32,
+    "part": 1,
+    "question_text": "Do you live in a house or a flat?",
+    "extra_text": null,
+    "category_id": 29
+  },
+  {
+    "id": 33,
+    "part": 1,
+    "question_text": "Who do you live with?",
+    "extra_text": null,
+    "category_id": 29
+  },
+  {
+    "id": 34,
+    "part": 1,
+    "question_text": "Are there many rooms in your home?",
+    "extra_text": null,
+    "category_id": 29
+  },
+  {
+    "id": 35,
+    "part": 1,
+    "question_text": "What is your favourite room?",
+    "extra_text": null,
+    "category_id": 29
+  },
+  {
+    "id": 36,
+    "part": 1,
+    "question_text": "How are the walls decorated?",
+    "extra_text": null,
+    "category_id": 29
+  },
+  {
+    "id": 37,
+    "part": 1,
+    "question_text": "What would you change about your home?",
+    "extra_text": null,
+    "category_id": 29
+  },
+  {
+    "id": 38,
+    "part": 1,
+    "question_text": "Do you plan to live there in the future?",
+    "extra_text": null,
+    "category_id": 29
+  },
+  {
+    "id": 39,
+    "part": 1,
+    "question_text": "What facilities are there near your home?",
+    "extra_text": null,
+    "category_id": 29
+  },
+  {
+    "id": 40,
+    "part": 1,
+    "question_text": "What is your neighbourhood like?",
+    "extra_text": null,
+    "category_id": 29
+  },
+  {
+    "id": 41,
+    "part": 1,
+    "question_text": "Do most people live in houses in your country?",
+    "extra_text": null,
+    "category_id": 29
+  },
+  {
+    "id": 42,
+    "part": 1,
+    "question_text": "Are you good at art?",
+    "extra_text": null,
+    "category_id": 2
+  },
+  {
+    "id": 43,
+    "part": 1,
+    "question_text": "Did you learn art at school when you were a child?",
+    "extra_text": null,
+    "category_id": 2
+  },
+  {
+    "id": 44,
+    "part": 1,
+    "question_text": "What kind of art do you like?",
+    "extra_text": null,
+    "category_id": 2
+  },
+  {
+    "id": 45,
+    "part": 1,
+    "question_text": "Is art popular in your country?",
+    "extra_text": null,
+    "category_id": 2
+  },
+  {
+    "id": 46,
+    "part": 1,
+    "question_text": "Have you ever been to an art gallery?",
+    "extra_text": null,
+    "category_id": 2
+  },
+  {
+    "id": 47,
+    "part": 1,
+    "question_text": "Do you think children can benefit from going to art galleries?",
+    "extra_text": null,
+    "category_id": 2
+  },
+  {
+    "id": 48,
+    "part": 1,
+    "question_text": "Do you have a bike?",
+    "extra_text": null,
+    "category_id": 3
+  },
+  {
+    "id": 49,
+    "part": 1,
+    "question_text": "How often do you use it?",
+    "extra_text": null,
+    "category_id": 3
+  },
+  {
+    "id": 50,
+    "part": 1,
+    "question_text": "How old were you when you learned to ride a bike?",
+    "extra_text": null,
+    "category_id": 3
+  },
+  {
+    "id": 51,
+    "part": 1,
+    "question_text": "Do many people in your country using bicycles?",
+    "extra_text": null,
+    "category_id": 3
+  },
+  {
+    "id": 52,
+    "part": 1,
+    "question_text": "Do you think using bicycles should be encouraged?",
+    "extra_text": null,
+    "category_id": 3
+  },
+  {
+    "id": 53,
+    "part": 1,
+    "question_text": "Do you usually celebrate your birthdays?",
+    "extra_text": null,
+    "category_id": 4
+  },
+  {
+    "id": 54,
+    "part": 1,
+    "question_text": "How did you celebrate your last birthday?",
+    "extra_text": null,
+    "category_id": 4
+  },
+  {
+    "id": 55,
+    "part": 1,
+    "question_text": "Which birthdays are the most important ones in your country?",
+    "extra_text": null,
+    "category_id": 4
+  },
+  {
+    "id": 56,
+    "part": 1,
+    "question_text": "Do you think children should celebrate their birthdays with a party?",
+    "extra_text": null,
+    "category_id": 4
+  },
+  {
+    "id": 57,
+    "part": 1,
+    "question_text": "Did you enjoy your childhood?",
+    "extra_text": null,
+    "category_id": 8
+  },
+  {
+    "id": 58,
+    "part": 1,
+    "question_text": "What is your first memory of your childhood?",
+    "extra_text": null,
+    "category_id": 8
+  },
+  {
+    "id": 59,
+    "part": 1,
+    "question_text": "Did you have a lot of friends when you were a child?",
+    "extra_text": null,
+    "category_id": 8
+  },
+  {
+    "id": 60,
+    "part": 1,
+    "question_text": "What did you enjoy doing as a child?",
+    "extra_text": null,
+    "category_id": 8
+  },
+  {
+    "id": 61,
+    "part": 1,
+    "question_text": "Do you think it is better for children to grow up in the city or in the countryside?",
+    "extra_text": null,
+    "category_id": 8
+  },
+  {
+    "id": 62,
+    "part": 1,
+    "question_text": "Are clothes important to you?",
+    "extra_text": null,
+    "category_id": 9
+  },
+  {
+    "id": 63,
+    "part": 1,
+    "question_text": "What kind of clothes do you usually wear?",
+    "extra_text": null,
+    "category_id": 9
+  },
+  {
+    "id": 64,
+    "part": 1,
+    "question_text": "Do you ever wear the traditional clothes of your country?",
+    "extra_text": null,
+    "category_id": 9
+  },
+  {
+    "id": 65,
+    "part": 1,
+    "question_text": "Where do you usually buy your clothes?",
+    "extra_text": null,
+    "category_id": 9
+  },
+  {
+    "id": 66,
+    "part": 1,
+    "question_text": "Have you ever worn a uniform?",
+    "extra_text": null,
+    "category_id": 9
+  },
+  {
+    "id": 67,
+    "part": 1,
+    "question_text": "Do most people in your country follow fashion?",
+    "extra_text": null,
+    "category_id": 9
+  },
+  {
+    "id": 68,
+    "part": 1,
+    "question_text": "Do you often use a computer?",
+    "extra_text": null,
+    "category_id": 11
+  },
+  {
+    "id": 69,
+    "part": 1,
+    "question_text": "How do you usually get online?",
+    "extra_text": null,
+    "category_id": 11
+  },
+  {
+    "id": 70,
+    "part": 1,
+    "question_text": "Do you prefer desktops or laptops?",
+    "extra_text": null,
+    "category_id": 11
+  },
+  {
+    "id": 71,
+    "part": 1,
+    "question_text": "What do you use your computer for?",
+    "extra_text": null,
+    "category_id": 11
+  },
+  {
+    "id": 72,
+    "part": 1,
+    "question_text": "Do you think it is important to learn how to use a computer?",
+    "extra_text": null,
+    "category_id": 11
+  },
+  {
+    "id": 73,
+    "part": 1,
+    "question_text": "When do you usually get up in the morning?",
+    "extra_text": null,
+    "category_id": 13
+  },
+  {
+    "id": 74,
+    "part": 1,
+    "question_text": "Do you usually have the same routine every day?",
+    "extra_text": null,
+    "category_id": 13
+  },
+  {
+    "id": 75,
+    "part": 1,
+    "question_text": "What is your daily routine?",
+    "extra_text": null,
+    "category_id": 13
+  },
+  {
+    "id": 76,
+    "part": 1,
+    "question_text": "Do you ever change your routine?",
+    "extra_text": null,
+    "category_id": 13
+  },
+  {
+    "id": 77,
+    "part": 1,
+    "question_text": "Is your routine the same today as it was when you were a child?",
+    "extra_text": null,
+    "category_id": 13
+  },
+  {
+    "id": 78,
+    "part": 1,
+    "question_text": "Do you think it is important to have a daily routine?",
+    "extra_text": null,
+    "category_id": 13
+  },
+  {
+    "id": 79,
+    "part": 1,
+    "question_text": "Do you often use a dictionary?",
+    "extra_text": null,
+    "category_id": 15
+  },
+  {
+    "id": 80,
+    "part": 1,
+    "question_text": "What do you use dictionaries for?",
+    "extra_text": null,
+    "category_id": 15
+  },
+  {
+    "id": 81,
+    "part": 1,
+    "question_text": "What kinds of dictionaries do you think are most useful?",
+    "extra_text": null,
+    "category_id": 15
+  },
+  {
+    "id": 82,
+    "part": 1,
+    "question_text": "Do you think dictionaries are useful for learning a language?",
+    "extra_text": null,
+    "category_id": 15
+  },
+  {
+    "id": 83,
+    "part": 1,
+    "question_text": "What kind of information you find in a dictionary?",
+    "extra_text": null,
+    "category_id": 15
+  },
+  {
+    "id": 84,
+    "part": 1,
+    "question_text": "Do you often have dreams when you sleep?",
+    "extra_text": null,
+    "category_id": 46
+  },
+  {
+    "id": 85,
+    "part": 1,
+    "question_text": "Do you usually remember your dreams?",
+    "extra_text": null,
+    "category_id": 46
+  },
+  {
+    "id": 86,
+    "part": 1,
+    "question_text": "Do you think dreams are important to remember?",
+    "extra_text": null,
+    "category_id": 46
+  },
+  {
+    "id": 87,
+    "part": 1,
+    "question_text": "Do you ever have daydream?",
+    "extra_text": null,
+    "category_id": 46
+  },
+  {
+    "id": 88,
+    "part": 1,
+    "question_text": "What kind of daydreams do you usually have?",
+    "extra_text": null,
+    "category_id": 46
+  },
+  {
+    "id": 89,
+    "part": 1,
+    "question_text": "What is your favourite drink?",
+    "extra_text": null,
+    "category_id": 23
+  },
+  {
+    "id": 90,
+    "part": 1,
+    "question_text": "Is it common for people to drink tea and coffee in your country?",
+    "extra_text": null,
+    "category_id": 23
+  },
+  {
+    "id": 91,
+    "part": 1,
+    "question_text": "Did you prefer different drinks as a child?",
+    "extra_text": null,
+    "category_id": 23
+  },
+  {
+    "id": 92,
+    "part": 1,
+    "question_text": "Do you think it is important to drink lots of water?",
+    "extra_text": null,
+    "category_id": 23
+  },
+  {
+    "id": 93,
+    "part": 1,
+    "question_text": "What is a traditional drink in your country for celebrating?",
+    "extra_text": null,
+    "category_id": 23
+  },
+  {
+    "id": 94,
+    "part": 1,
+    "question_text": "What do you often do in the evenings?",
+    "extra_text": null,
+    "category_id": 19
+  },
+  {
+    "id": 95,
+    "part": 1,
+    "question_text": "Do you do the same thing every evening?",
+    "extra_text": null,
+    "category_id": 19
+  },
+  {
+    "id": 96,
+    "part": 1,
+    "question_text": "Do you prefer to spend your evenings with family or friends?",
+    "extra_text": null,
+    "category_id": 19
+  },
+  {
+    "id": 97,
+    "part": 1,
+    "question_text": "Do you ever work or study in the evenings?",
+    "extra_text": null,
+    "category_id": 19
+  },
+  {
+    "id": 98,
+    "part": 1,
+    "question_text": "What is a popular activity for young people in your country in the evenings?",
+    "extra_text": null,
+    "category_id": 19
+  },
+  {
+    "id": 99,
+    "part": 1,
+    "question_text": "Do you do the same thing in the evenings as you did when you were a child?",
+    "extra_text": null,
+    "category_id": 19
+  },
+  {
+    "id": 100,
+    "part": 1,
+    "question_text": "Do you spend much time with your family?",
+    "extra_text": null,
+    "category_id": 21
+  },
+  {
+    "id": 101,
+    "part": 1,
+    "question_text": "Who are you closest to in your family?",
+    "extra_text": null,
+    "category_id": 21
+  },
+  {
+    "id": 102,
+    "part": 1,
+    "question_text": "Do you prefer spending time with your family or friends?",
+    "extra_text": null,
+    "category_id": 21
+  },
+  {
+    "id": 103,
+    "part": 1,
+    "question_text": "Who is your best friend?",
+    "extra_text": null,
+    "category_id": 21
+  },
+  {
+    "id": 104,
+    "part": 1,
+    "question_text": "Are you still friends with people from your childhood?",
+    "extra_text": null,
+    "category_id": 21
+  },
+  {
+    "id": 105,
+    "part": 1,
+    "question_text": "Is family important in your country?",
+    "extra_text": null,
+    "category_id": 21
+  },
+  {
+    "id": 106,
+    "part": 1,
+    "question_text": "Do you like flowers?",
+    "extra_text": null,
+    "category_id": 22
+  },
+  {
+    "id": 107,
+    "part": 1,
+    "question_text": "What's your favourite flower?",
+    "extra_text": null,
+    "category_id": 22
+  },
+  {
+    "id": 108,
+    "part": 1,
+    "question_text": "When was the last time you gave someone flowers?",
+    "extra_text": null,
+    "category_id": 22
+  },
+  {
+    "id": 109,
+    "part": 1,
+    "question_text": "Do any flowers have a special meaning in your country?",
+    "extra_text": null,
+    "category_id": 22
+  },
+  {
+    "id": 110,
+    "part": 1,
+    "question_text": "Why do you think women like flowers more than men?",
+    "extra_text": null,
+    "category_id": 22
+  },
+  {
+    "id": 111,
+    "part": 1,
+    "question_text": "What's your favourite food?",
+    "extra_text": null,
+    "category_id": 23
+  },
+  {
+    "id": 112,
+    "part": 1,
+    "question_text": "Have you always liked the same food?",
+    "extra_text": null,
+    "category_id": 23
+  },
+  {
+    "id": 113,
+    "part": 1,
+    "question_text": "Is there any food you dislike?",
+    "extra_text": null,
+    "category_id": 23
+  },
+  {
+    "id": 114,
+    "part": 1,
+    "question_text": "What is a common meal in your country?",
+    "extra_text": null,
+    "category_id": 23
+  },
+  {
+    "id": 115,
+    "part": 1,
+    "question_text": "Do you have a healthy diet?",
+    "extra_text": null,
+    "category_id": 23
+  },
+  {
+    "id": 116,
+    "part": 1,
+    "question_text": "What do you think of fast food?",
+    "extra_text": null,
+    "category_id": 23
+  },
+  {
+    "id": 117,
+    "part": 1,
+    "question_text": "Do you often go out in the evenings?",
+    "extra_text": null,
+    "category_id": 25
+  },
+  {
+    "id": 118,
+    "part": 1,
+    "question_text": "What do you like to do when you go out?",
+    "extra_text": null,
+    "category_id": 25
+  },
+  {
+    "id": 119,
+    "part": 1,
+    "question_text": "Do you prefer going out on your own or with friends?",
+    "extra_text": null,
+    "category_id": 25
+  },
+  {
+    "id": 120,
+    "part": 1,
+    "question_text": "How often do you go out in a week?",
+    "extra_text": null,
+    "category_id": 25
+  },
+  {
+    "id": 121,
+    "part": 1,
+    "question_text": "Where do most young people like to go out in your country?",
+    "extra_text": null,
+    "category_id": 25
+  },
+  {
+    "id": 122,
+    "part": 1,
+    "question_text": "Are you a happy person?",
+    "extra_text": null,
+    "category_id": 26
+  },
+  {
+    "id": 123,
+    "part": 1,
+    "question_text": "What usually makes you happy or unhappy?",
+    "extra_text": null,
+    "category_id": 26
+  },
+  {
+    "id": 124,
+    "part": 1,
+    "question_text": "Does the weather ever affect how you feel?",
+    "extra_text": null,
+    "category_id": 26
+  },
+  {
+    "id": 125,
+    "part": 1,
+    "question_text": "What makes you smile?",
+    "extra_text": null,
+    "category_id": 26
+  },
+  {
+    "id": 126,
+    "part": 1,
+    "question_text": "Do you think people in your country are generally happy people?",
+    "extra_text": null,
+    "category_id": 26
+  },
+  {
+    "id": 127,
+    "part": 1,
+    "question_text": "Do you have a hobby?",
+    "extra_text": null,
+    "category_id": 28
+  },
+  {
+    "id": 128,
+    "part": 1,
+    "question_text": "What equipment do you need for it?",
+    "extra_text": null,
+    "category_id": 28
+  },
+  {
+    "id": 129,
+    "part": 1,
+    "question_text": "Do you think hobbies should be shared with other people?",
+    "extra_text": null,
+    "category_id": 28
+  },
+  {
+    "id": 130,
+    "part": 1,
+    "question_text": "Did you have a hobby as a child?",
+    "extra_text": null,
+    "category_id": 28
+  },
+  {
+    "id": 131,
+    "part": 1,
+    "question_text": "What hobbies are popular in your country?",
+    "extra_text": null,
+    "category_id": 28
+  },
+  {
+    "id": 132,
+    "part": 1,
+    "question_text": "Why do you think people have hobbies?",
+    "extra_text": null,
+    "category_id": 28
+  },
+  {
+    "id": 133,
+    "part": 1,
+    "question_text": "How often do you go online?",
+    "extra_text": null,
+    "category_id": 31
+  },
+  {
+    "id": 134,
+    "part": 1,
+    "question_text": "What do you use the internet for?",
+    "extra_text": null,
+    "category_id": 31
+  },
+  {
+    "id": 135,
+    "part": 1,
+    "question_text": "How do you get online?",
+    "extra_text": null,
+    "category_id": 31
+  },
+  {
+    "id": 136,
+    "part": 1,
+    "question_text": "Do you have your own computer?",
+    "extra_text": null,
+    "category_id": 31
+  },
+  {
+    "id": 137,
+    "part": 1,
+    "question_text": "What's your favourite website?",
+    "extra_text": null,
+    "category_id": 31
+  },
+  {
+    "id": 138,
+    "part": 1,
+    "question_text": "Do you think children should be allowed unsupervised access to the internet?",
+    "extra_text": null,
+    "category_id": 31
+  },
+  {
+    "id": 139,
+    "part": 1,
+    "question_text": "How many foreign languages do you speak?",
+    "extra_text": null,
+    "category_id": 34
+  },
+  {
+    "id": 140,
+    "part": 1,
+    "question_text": "When did you start learning your first foreign language?",
+    "extra_text": null,
+    "category_id": 34
+  },
+  {
+    "id": 141,
+    "part": 1,
+    "question_text": "How many foreign languages do children in your country learn at school?",
+    "extra_text": null,
+    "category_id": 34
+  },
+  {
+    "id": 142,
+    "part": 1,
+    "question_text": "Do you think it is important to learn a foreign language?",
+    "extra_text": null,
+    "category_id": 34
+  },
+  {
+    "id": 143,
+    "part": 1,
+    "question_text": "What is your favourite leisure activity?",
+    "extra_text": null,
+    "category_id": 37
+  },
+  {
+    "id": 144,
+    "part": 1,
+    "question_text": "What did you enjoy doing in your free time as a child?",
+    "extra_text": null,
+    "category_id": 37
+  },
+  {
+    "id": 145,
+    "part": 1,
+    "question_text": "Do you prefer to spend your free time with other people or alone?",
+    "extra_text": null,
+    "category_id": 37
+  },
+  {
+    "id": 146,
+    "part": 1,
+    "question_text": "What is a common leisure activity in your country?",
+    "extra_text": null,
+    "category_id": 37
+  },
+  {
+    "id": 147,
+    "part": 1,
+    "question_text": "Do most people in your country get two days off a week?",
+    "extra_text": null,
+    "category_id": 37
+  },
+  {
+    "id": 148,
+    "part": 1,
+    "question_text": "Do you think leisure time is important?",
+    "extra_text": null,
+    "category_id": 37
+  },
+  {
+    "id": 149,
+    "part": 1,
+    "question_text": "Do you like music?",
+    "extra_text": null,
+    "category_id": 40
+  },
+  {
+    "id": 150,
+    "part": 1,
+    "question_text": "What's your favourite type of music?",
+    "extra_text": null,
+    "category_id": 40
+  },
+  {
+    "id": 151,
+    "part": 1,
+    "question_text": "Can you sing?",
+    "extra_text": null,
+    "category_id": 40
+  },
+  {
+    "id": 152,
+    "part": 1,
+    "question_text": "Did you learn music at school?",
+    "extra_text": null,
+    "category_id": 40
+  },
+  {
+    "id": 153,
+    "part": 1,
+    "question_text": "If you could learn a musical instrument, what would it be?",
+    "extra_text": null,
+    "category_id": 40
+  },
+  {
+    "id": 154,
+    "part": 1,
+    "question_text": "Do you think music is important?",
+    "extra_text": null,
+    "category_id": 40
+  },
+  {
+    "id": 155,
+    "part": 1,
+    "question_text": "Do you like your neighbours?",
+    "extra_text": null,
+    "category_id": 42
+  },
+  {
+    "id": 156,
+    "part": 1,
+    "question_text": "Are neighbours usually close to each other in your country?",
+    "extra_text": null,
+    "category_id": 42
+  },
+  {
+    "id": 157,
+    "part": 1,
+    "question_text": "What is your neighbourhood like?",
+    "extra_text": null,
+    "category_id": 42
+  },
+  {
+    "id": 158,
+    "part": 1,
+    "question_text": "Do you think your neighbourhood is a good place for children?",
+    "extra_text": null,
+    "category_id": 42
+  },
+  {
+    "id": 159,
+    "part": 1,
+    "question_text": "How could your neighbourhood be improved?",
+    "extra_text": null,
+    "category_id": 42
+  },
+  {
+    "id": 160,
+    "part": 1,
+    "question_text": "Do you think it is important to have a good relationship with your neighbours?",
+    "extra_text": null,
+    "category_id": 42
+  },
+  {
+    "id": 161,
+    "part": 1,
+    "question_text": "How do you usually get your news?",
+    "extra_text": null,
+    "category_id": 44
+  },
+  {
+    "id": 162,
+    "part": 1,
+    "question_text": "Do you often read the newspapers?",
+    "extra_text": null,
+    "category_id": 44
+  },
+  {
+    "id": 163,
+    "part": 1,
+    "question_text": "What kind of news do you usually follow?",
+    "extra_text": null,
+    "category_id": 44
+  },
+  {
+    "id": 164,
+    "part": 1,
+    "question_text": "How do most people get the news in your country?",
+    "extra_text": null,
+    "category_id": 44
+  },
+  {
+    "id": 165,
+    "part": 1,
+    "question_text": "Do you think international news is important?",
+    "extra_text": null,
+    "category_id": 44
+  },
+  {
+    "id": 166,
+    "part": 1,
+    "question_text": "Do you live in a noisy area?",
+    "extra_text": null,
+    "category_id": 46
+  },
+  {
+    "id": 167,
+    "part": 1,
+    "question_text": "What kinds of sounds you you hear on a daily basis?",
+    "extra_text": null,
+    "category_id": 46
+  },
+  {
+    "id": 168,
+    "part": 1,
+    "question_text": "Where do you go to spend time in peace and quiet?",
+    "extra_text": null,
+    "category_id": 46
+  },
+  {
+    "id": 169,
+    "part": 1,
+    "question_text": "Are there any sounds which you think are pleasant?",
+    "extra_text": null,
+    "category_id": 46
+  },
+  {
+    "id": 170,
+    "part": 1,
+    "question_text": "Do you have any noisy friends?",
+    "extra_text": null,
+    "category_id": 46
+  },
+  {
+    "id": 171,
+    "part": 1,
+    "question_text": "Are you a patient person?",
+    "extra_text": null,
+    "category_id": 53
+  },
+  {
+    "id": 172,
+    "part": 1,
+    "question_text": "Do you ever get impatient?",
+    "extra_text": null,
+    "category_id": 53
+  },
+  {
+    "id": 173,
+    "part": 1,
+    "question_text": "When was the last time you lost your patience?",
+    "extra_text": null,
+    "category_id": 53
+  },
+  {
+    "id": 174,
+    "part": 1,
+    "question_text": "Which person in your family is the most patient?",
+    "extra_text": null,
+    "category_id": 53
+  },
+  {
+    "id": 175,
+    "part": 1,
+    "question_text": "Do you have a pet?",
+    "extra_text": null,
+    "category_id": 47
+  },
+  {
+    "id": 176,
+    "part": 1,
+    "question_text": "Do you like animals?",
+    "extra_text": null,
+    "category_id": 47
+  },
+  {
+    "id": 177,
+    "part": 1,
+    "question_text": "What's your favourite animal?",
+    "extra_text": null,
+    "category_id": 47
+  },
+  {
+    "id": 178,
+    "part": 1,
+    "question_text": "What is a popular pet to have in your country?",
+    "extra_text": null,
+    "category_id": 47
+  },
+  {
+    "id": 179,
+    "part": 1,
+    "question_text": "Did you have a pet as a child?",
+    "extra_text": null,
+    "category_id": 47
+  },
+  {
+    "id": 180,
+    "part": 1,
+    "question_text": "Why do people have pets?",
+    "extra_text": null,
+    "category_id": 47
+  },
+  {
+    "id": 181,
+    "part": 1,
+    "question_text": "Do you often read?",
+    "extra_text": null,
+    "category_id": 51
+  },
+  {
+    "id": 182,
+    "part": 1,
+    "question_text": "What is your favourite kind of book to read?",
+    "extra_text": null,
+    "category_id": 51
+  },
+  {
+    "id": 183,
+    "part": 1,
+    "question_text": "Do you often read newspapers?",
+    "extra_text": null,
+    "category_id": 51
+  },
+  {
+    "id": 184,
+    "part": 1,
+    "question_text": "Do you have any e-books?",
+    "extra_text": null,
+    "category_id": 51
+  },
+  {
+    "id": 185,
+    "part": 1,
+    "question_text": "What books did you read as a child?",
+    "extra_text": null,
+    "category_id": 51
+  },
+  {
+    "id": 186,
+    "part": 1,
+    "question_text": "Do you think it is important to encourage children to read?",
+    "extra_text": null,
+    "category_id": 51
+  },
+  {
+    "id": 187,
+    "part": 1,
+    "question_text": "Do you like shopping?",
+    "extra_text": null,
+    "category_id": 54
+  },
+  {
+    "id": 188,
+    "part": 1,
+    "question_text": "What's your favourite shop?",
+    "extra_text": null,
+    "category_id": 54
+  },
+  {
+    "id": 189,
+    "part": 1,
+    "question_text": "Do you prefer shopping alone or with others?",
+    "extra_text": null,
+    "category_id": 54
+  },
+  {
+    "id": 190,
+    "part": 1,
+    "question_text": "What kinds of shops are there where you live?",
+    "extra_text": null,
+    "category_id": 54
+  },
+  {
+    "id": 191,
+    "part": 1,
+    "question_text": "Have you ever bought anything online?",
+    "extra_text": null,
+    "category_id": 54
+  },
+  {
+    "id": 192,
+    "part": 1,
+    "question_text": "Do you think men and women have different opinions about shopping?",
+    "extra_text": null,
+    "category_id": 54
+  },
+  {
+    "id": 193,
+    "part": 1,
+    "question_text": "Do you like sport?",
+    "extra_text": null,
+    "category_id": 57
+  },
+  {
+    "id": 194,
+    "part": 1,
+    "question_text": "What's your favourite sport?",
+    "extra_text": null,
+    "category_id": 57
+  },
+  {
+    "id": 195,
+    "part": 1,
+    "question_text": "Do you often watch sport on TV?",
+    "extra_text": null,
+    "category_id": 57
+  },
+  {
+    "id": 196,
+    "part": 1,
+    "question_text": "Did you play sport as a child?",
+    "extra_text": null,
+    "category_id": 57
+  },
+  {
+    "id": 197,
+    "part": 1,
+    "question_text": "What is the most popular sport in your country?",
+    "extra_text": null,
+    "category_id": 57
+  },
+  {
+    "id": 198,
+    "part": 1,
+    "question_text": "How do most people in your country keep fit?",
+    "extra_text": null,
+    "category_id": 57
+  },
+  {
+    "id": 199,
+    "part": 1,
+    "question_text": "Do you often watch TV?",
+    "extra_text": null,
+    "category_id": 63
+  },
+  {
+    "id": 200,
+    "part": 1,
+    "question_text": "What sorts of things do you watch on TV?",
+    "extra_text": null,
+    "category_id": 63
+  },
+  {
+    "id": 201,
+    "part": 1,
+    "question_text": "What is your favourite TV program?",
+    "extra_text": null,
+    "category_id": 63
+  },
+  {
+    "id": 202,
+    "part": 1,
+    "question_text": "Do you ever watch foreign programs or films?",
+    "extra_text": null,
+    "category_id": 63
+  },
+  {
+    "id": 203,
+    "part": 1,
+    "question_text": "What did you watch on TV when you were a child?",
+    "extra_text": null,
+    "category_id": 63
+  },
+  {
+    "id": 204,
+    "part": 1,
+    "question_text": "Do you think children should watch TV?",
+    "extra_text": null,
+    "category_id": 63
+  },
+  {
+    "id": 205,
+    "part": 1,
+    "question_text": "How did you get here today?",
+    "extra_text": null,
+    "category_id": 61
+  },
+  {
+    "id": 206,
+    "part": 1,
+    "question_text": "What is your favourite mode of transport?",
+    "extra_text": null,
+    "category_id": 61
+  },
+  {
+    "id": 207,
+    "part": 1,
+    "question_text": "Do you ever use public transport?",
+    "extra_text": null,
+    "category_id": 61
+  },
+  {
+    "id": 208,
+    "part": 1,
+    "question_text": "Do you like the transport system in your country?",
+    "extra_text": null,
+    "category_id": 61
+  },
+  {
+    "id": 209,
+    "part": 1,
+    "question_text": "What is the difference between taking a bus and taking a train?",
+    "extra_text": null,
+    "category_id": 61
+  },
+  {
+    "id": 210,
+    "part": 1,
+    "question_text": "What's the weather like today?",
+    "extra_text": null,
+    "category_id": 67
+  },
+  {
+    "id": 211,
+    "part": 1,
+    "question_text": "What's your favourite weather?",
+    "extra_text": null,
+    "category_id": 67
+  },
+  {
+    "id": 212,
+    "part": 1,
+    "question_text": "Do you like the weather in your country?",
+    "extra_text": null,
+    "category_id": 67
+  },
+  {
+    "id": 213,
+    "part": 1,
+    "question_text": "Is the weather the same in all parts of your country?",
+    "extra_text": null,
+    "category_id": 67
+  },
+  {
+    "id": 214,
+    "part": 1,
+    "question_text": "Does the weather ever affect the way you feel?",
+    "extra_text": null,
+    "category_id": 67
+  },
+  {
+    "id": 215,
+    "part": 2,
+    "question_text": "Describe a piece of art you like.",
+    "extra_text": "You should say:\n\nwhat the work of art is\nwhen you first saw it\nwhat you know about it\nand explain why you like it.",
+    "category_id": 2
+  },
+  {
+    "id": 216,
+    "part": 2,
+    "question_text": "Describe a book you have recently read.",
+    "extra_text": "You should say:\n\nwhat kind of book it is\nwhat it is about\nwhat sort of people would enjoy it\nand explain why you liked it.",
+    "category_id": 5
+  },
+  {
+    "id": 217,
+    "part": 2,
+    "question_text": "Describe a piece of advice you recently received.",
+    "extra_text": "You should say:\n\nwhen this happened\nwho gave you the advice\nwhat the advice was\nand explain how you felt about the advice.",
+    "category_id": 10
+  },
+  {
+    "id": 218,
+    "part": 2,
+    "question_text": "Describe a time of the day you like.",
+    "extra_text": "You should say:\n\nwhat time of day it is\nwhat you do at that time\nwho you are usually with\nand explain why you like it.",
+    "category_id": 13
+  },
+  {
+    "id": 219,
+    "part": 2,
+    "question_text": "Describe a time you were embarrassed.",
+    "extra_text": "You should say:\n\nwhen it was\nwho you were with\nwhat happened\nand how you coped afterwards",
+    "category_id": 17
+  },
+  {
+    "id": 220,
+    "part": 2,
+    "question_text": "Describe an exercise you know.",
+    "extra_text": "You should say:\n\nwhat it is\nhow it is done\nwhen you first tried it\nwhat kind of people it is suitable for\nand explain why you think it is a good exercise.",
+    "category_id": 20
+  },
+  {
+    "id": 221,
+    "part": 2,
+    "question_text": "Describe a member of the your family you get on well with.",
+    "extra_text": "You should say:\n\nwho it is\nwhat relationship you have to that person\nwhat that person is like\nwhat you do together\nand explain why you get on so well.",
+    "category_id": 21
+  },
+  {
+    "id": 222,
+    "part": 2,
+    "question_text": "Describe a gift you recently gave to someone.",
+    "extra_text": "You should say:\n\nwho you gave it to\nwhat kind of person he/she is\nwhat the gift was\nwhat occasion the gift was for\nand explain why you chose that gift.",
+    "category_id": 24
+  },
+  {
+    "id": 223,
+    "part": 2,
+    "question_text": "Describe an interesting hobby.",
+    "extra_text": "You should say:\n\nwhat it is\nwhat kind of people do it\nhow it is done\nand explain why you think it is interesting.",
+    "category_id": 28
+  },
+  {
+    "id": 224,
+    "part": 2,
+    "question_text": "Describe a useful website.",
+    "extra_text": "You should say:\n\nwhat it is\nhow often you visit it\nwhat kind of site it is\nwhat kind of information it offers\nand explain why you think it is useful.",
+    "category_id": 31
+  },
+  {
+    "id": 225,
+    "part": 2,
+    "question_text": "Describe a journey that didn't go as planned.",
+    "extra_text": "You should say:\n\nwhere you were going\nhow you were travelling\nwho you were with\nwhat went wrong\nand explain what you would do differently.",
+    "category_id": 32
+  },
+  {
+    "id": 226,
+    "part": 2,
+    "question_text": "Describe a person you know who is kind.",
+    "extra_text": "You should say:\n\nwho it is\nhow you know this person\nwhat sort of person he/she is\nand explain why you think they are kind.",
+    "category_id": 33
+  },
+  {
+    "id": 227,
+    "part": 2,
+    "question_text": "Describe a language you have learned.",
+    "extra_text": "You should say:\n\nwhat it is\nwhen you started learning\nhow you learned it\nwhat was difficult about it\nand why you decided to learn that language.",
+    "category_id": 34
+  },
+  {
+    "id": 228,
+    "part": 2,
+    "question_text": "Describe a good law.",
+    "extra_text": "You should say:\n\nwhat it is\nwho is affected by it\nand why you think it is good.",
+    "category_id": 35
+  },
+  {
+    "id": 229,
+    "part": 2,
+    "question_text": "Describe a song you like.",
+    "extra_text": "You should say:\n\nwhat kind of song it is\nwhat the song is about\nwhen you first heard it\nand explain why you like it.",
+    "category_id": 40
+  },
+  {
+    "id": 230,
+    "part": 2,
+    "question_text": "Describe some good news you recently received.",
+    "extra_text": "You should say:\n\nwhat the news was\nhow you received the news\nwho gave it to you\nand explain why this was good news.",
+    "category_id": 43
+  },
+  {
+    "id": 231,
+    "part": 2,
+    "question_text": "Describe an old person you know.",
+    "extra_text": "You should say:\n\nwho this person is\nhow old he/she is\nwhat this person is like\nand explain why you like this person.",
+    "category_id": 45
+  },
+  {
+    "id": 232,
+    "part": 2,
+    "question_text": "Describe a place that you find peaceful.",
+    "extra_text": "You should say:\n\nwhere it is\nwhen you first went there\nwhat you do there\nand why you like it",
+    "category_id": 46
+  },
+  {
+    "id": 233,
+    "part": 2,
+    "question_text": "Describe a photograph you like.",
+    "extra_text": "You should say:\n\nwhat can be seen in the photo\nwhen it was taken\nwho took it\nand explain why you like it.",
+    "category_id": 49
+  },
+  {
+    "id": 234,
+    "part": 2,
+    "question_text": "Describe something you do to relax.",
+    "extra_text": "You should say:\n\nwhat it is\nwhere you do it\nwhen you first did it\nand why you find it relaxing.",
+    "category_id": 52
+  },
+  {
+    "id": 235,
+    "part": 2,
+    "question_text": "Describe someone you respect.",
+    "extra_text": "You should say:\n\nwho the person is\nhow you know about this person\nwhat this person does\nwhat this person is like\nand explain why you respect this person.",
+    "category_id": 53
+  },
+  {
+    "id": 236,
+    "part": 2,
+    "question_text": "Describe a sports you would like to learn.",
+    "extra_text": "You should say:\n\nwhat it is\nwhat equipment is needed for it\nhow you would learn it\nand explain why you would like to learn this sport.",
+    "category_id": 57
+  },
+  {
+    "id": 237,
+    "part": 2,
+    "question_text": "Describe your favourite time of day",
+    "extra_text": "You should say:\n\nwhen it is\nwhat you like to do\nand why it is different to other parts of the day",
+    "category_id": 59
+  },
+  {
+    "id": 238,
+    "part": 2,
+    "question_text": "Describe a place you have recently visited.",
+    "extra_text": "You should say:\n\nwhere you went\nwho you went with\nhow you got there\nand explain why you enjoyed it.",
+    "category_id": 62
+  },
+  {
+    "id": 239,
+    "part": 2,
+    "question_text": "Describe an unexpected event.",
+    "extra_text": "You should say:\n\nwhat it was\nwhen it happened\nwho was there\nwhy it was unexpected\nand explain why you enjoyed it.",
+    "category_id": 64
+  },
+  {
+    "id": 240,
+    "part": 2,
+    "question_text": "Describe a vocation you think is useful to society.",
+    "extra_text": "You should say:\n\nwhat it is\nwhat it involves\nwhat kind of people usually do this work\nand explain why you think it is useful to society.",
+    "category_id": 65
+  },
+  {
+    "id": 241,
+    "part": 2,
+    "question_text": "Describe a place near water.",
+    "extra_text": "You should say:\n\nwhere it is\nhow you get there\nhow often you do there\nwhat you can do there\nand explain why you like it.",
+    "category_id": 66
+  },
+  {
+    "id": 242,
+    "part": 2,
+    "question_text": "Describe your favourite shop.",
+    "extra_text": "You should say:\n\nwhere it is\nhow often you go there\nwhat it sells\nand explain why you think it is a good shop.",
+    "category_id": 69
+  },
+  {
+    "id": 243,
+    "part": 2,
+    "question_text": "Describe a place with animals.",
+    "extra_text": "You should say:\n\nwhere it is\nhow you heard of it\nwhat animals can be seen\nand explain why it might be an interesting place to visit.",
+    "category_id": 70
+  },
+
+  {
+    "id": 244,
+    "part": 3,
+    "question_text": "Do you think adverts have a big impact on what people buy?",
+    "extra_text": null,
+    "category_id": 1
+  },
+  {
+    "id": 245,
+    "part": 3,
+    "question_text": "Are adverts useful for people?",
+    "extra_text": null,
+    "category_id": 1
+  },
+  {
+    "id": 246,
+    "part": 3,
+    "question_text": "What kinds of adverts are most common in your country?",
+    "extra_text": null,
+    "category_id": 1
+  },
+  {
+    "id": 247,
+    "part": 3,
+    "question_text": "Which are more effective: adverts on TV or adverts on social media?",
+    "extra_text": null,
+    "category_id": 1
+  },
+  {
+    "id": 248,
+    "part": 3,
+    "question_text": "Do you think advertising aimed at children is acceptable?",
+    "extra_text": null,
+    "category_id": 1
+  },
+  {
+    "id": 249,
+    "part": 3,
+    "question_text": "What do you think about advertising for fast food?",
+    "extra_text": null,
+    "category_id": 1
+  },
+  {
+    "id": 250,
+    "part": 3,
+    "question_text": "Do you think some types of adverts should be banned?",
+    "extra_text": null,
+    "category_id": 1
+  },
+  {
+    "id": 251,
+    "part": 3,
+    "question_text": "What kind of art do you enjoy?",
+    "extra_text": null,
+    "category_id": 2
+  },
+  {
+    "id": 252,
+    "part": 3,
+    "question_text": "What are the tradition art forms in your country?",
+    "extra_text": null,
+    "category_id": 2
+  },
+  {
+    "id": 253,
+    "part": 3,
+    "question_text": "What makes a good painting?",
+    "extra_text": null,
+    "category_id": 2
+  },
+  {
+    "id": 254,
+    "part": 3,
+    "question_text": "Do you think children should study art at school?",
+    "extra_text": null,
+    "category_id": 2
+  },
+  {
+    "id": 255,
+    "part": 3,
+    "question_text": "How can children benefit from learning art?",
+    "extra_text": null,
+    "category_id": 2
+  },
+  {
+    "id": 256,
+    "part": 3,
+    "question_text": "How has art changed in the last few decades in your country?",
+    "extra_text": null,
+    "category_id": 2
+  },
+  {
+    "id": 257,
+    "part": 3,
+    "question_text": "What kinds of books do children in your country like to read?",
+    "extra_text": null,
+    "category_id": 5
+  },
+  {
+    "id": 258,
+    "part": 3,
+    "question_text": "Do you think children can learn a lot from books?",
+    "extra_text": null,
+    "category_id": 5
+  },
+  {
+    "id": 259,
+    "part": 3,
+    "question_text": "Do you think fairy tales are useful books for children?",
+    "extra_text": null,
+    "category_id": 5
+  },
+  {
+    "id": 260,
+    "part": 3,
+    "question_text": "Why do some adults read books written for children?",
+    "extra_text": null,
+    "category_id": 5
+  },
+  {
+    "id": 261,
+    "part": 3,
+    "question_text": "Do you think paper books will some day disappear?",
+    "extra_text": null,
+    "category_id": 5
+  },
+  {
+    "id": 262,
+    "part": 3,
+    "question_text": "What are the advantages of e-books?",
+    "extra_text": null,
+    "category_id": 5
+  },
+  {
+    "id": 263,
+    "part": 3,
+    "question_text": "Do you think libraries are still useful in today's society?",
+    "extra_text": null,
+    "category_id": 5
+  },
+  {
+    "id": 264,
+    "part": 3,
+    "question_text": "What are popular small businesses in your country?",
+    "extra_text": null,
+    "category_id": 6
+  },
+  {
+    "id": 265,
+    "part": 3,
+    "question_text": "What kinds of products does your country produce?",
+    "extra_text": null,
+    "category_id": 6
+  },
+  {
+    "id": 266,
+    "part": 3,
+    "question_text": "Do you think it's important to purchase products from your own country rather than from abroad?",
+    "extra_text": null,
+    "category_id": 6
+  },
+  {
+    "id": 267,
+    "part": 3,
+    "question_text": "Why do some people like to run their own business?",
+    "extra_text": null,
+    "category_id": 6
+  },
+  {
+    "id": 268,
+    "part": 3,
+    "question_text": "Do you think family business are problematic?",
+    "extra_text": null,
+    "category_id": 6
+  },
+  {
+    "id": 269,
+    "part": 3,
+    "question_text": "What does it take for a business to be successful?",
+    "extra_text": null,
+    "category_id": 6
+  },
+  {
+    "id": 270,
+    "part": 3,
+    "question_text": "Has globalisation affected small businesses in your country?",
+    "extra_text": null,
+    "category_id": 6
+  },
+  {
+    "id": 271,
+    "part": 3,
+    "question_text": "How does someone become a celebrity?",
+    "extra_text": null,
+    "category_id": 7
+  },
+  {
+    "id": 272,
+    "part": 3,
+    "question_text": "Are all celebrities actors or singers?",
+    "extra_text": null,
+    "category_id": 7
+  },
+  {
+    "id": 273,
+    "part": 3,
+    "question_text": "Do you think a person needs to be talented to be a celebrity?",
+    "extra_text": null,
+    "category_id": 7
+  },
+  {
+    "id": 274,
+    "part": 3,
+    "question_text": "Are all celebrities good role models?",
+    "extra_text": null,
+    "category_id": 7
+  },
+  {
+    "id": 275,
+    "part": 3,
+    "question_text": "What do you think about celebrities who behave badly in public?",
+    "extra_text": null,
+    "category_id": 7
+  },
+  {
+    "id": 276,
+    "part": 3,
+    "question_text": "Do you think children should learn from celebrities?",
+    "extra_text": null,
+    "category_id": 7
+  },
+  {
+    "id": 277,
+    "part": 3,
+    "question_text": "How do celebrities have a positive impact on the world?",
+    "extra_text": null,
+    "category_id": 7
+  },
+  {
+    "id": 278,
+    "part": 3,
+    "question_text": "Are there any downsides to fame?",
+    "extra_text": null,
+    "category_id": 7
+  },
+  {
+    "id": 279,
+    "part": 3,
+    "question_text": "Do you think famous people have the right to privacy?",
+    "extra_text": null,
+    "category_id": 7
+  },
+  {
+    "id": 280,
+    "part": 3,
+    "question_text": "Are modern celebrities different to celebrities a few decades ago?",
+    "extra_text": null,
+    "category_id": 7
+  },
+  {
+    "id": 281,
+    "part": 3,
+    "question_text": "Can clothing tell you much about a person?",
+    "extra_text": null,
+    "category_id": 9
+  },
+  {
+    "id": 282,
+    "part": 3,
+    "question_text": "Why do some companies ask their staff to wear uniforms?",
+    "extra_text": null,
+    "category_id": 9
+  },
+  {
+    "id": 283,
+    "part": 3,
+    "question_text": "What are the advantages and disadvantages of having uniforms at work?",
+    "extra_text": null,
+    "category_id": 9
+  },
+  {
+    "id": 284,
+    "part": 3,
+    "question_text": "When do people wear traditional clothing in your country?",
+    "extra_text": null,
+    "category_id": 9
+  },
+  {
+    "id": 285,
+    "part": 3,
+    "question_text": "How have clothes fashions change in your country over the last few decades?",
+    "extra_text": null,
+    "category_id": 9
+  },
+  {
+    "id": 286,
+    "part": 3,
+    "question_text": "What is the difference between clothes that young people and old people like to wear?",
+    "extra_text": null,
+    "category_id": 9
+  },
+  {
+    "id": 287,
+    "part": 3,
+    "question_text": "What popular traditions do you have in your country?",
+    "extra_text": null,
+    "category_id": 12
+  },
+  {
+    "id": 288,
+    "part": 3,
+    "question_text": "Do you think it's important to keep these traditions alive?",
+    "extra_text": null,
+    "category_id": 12
+  },
+  {
+    "id": 289,
+    "part": 3,
+    "question_text": "Are young people less interested in traditions these days?",
+    "extra_text": null,
+    "category_id": 12
+  },
+  {
+    "id": 290,
+    "part": 3,
+    "question_text": "Do you think foreign culture is influencing the culture of your country?",
+    "extra_text": null,
+    "category_id": 12
+  },
+  {
+    "id": 291,
+    "part": 3,
+    "question_text": "How has your country's culture changed over the last few decades?",
+    "extra_text": null,
+    "category_id": 12
+  },
+  {
+    "id": 292,
+    "part": 3,
+    "question_text": "What can be done to keep culture alive?",
+    "extra_text": null,
+    "category_id": 12
+  },
+  {
+    "id": 293,
+    "part": 3,
+    "question_text": "What kinds of traditional foods are there in your country?",
+    "extra_text": null,
+    "category_id": 12
+  },
+  {
+    "id": 294,
+    "part": 3,
+    "question_text": "When do people wear traditional clothing in your country?",
+    "extra_text": null,
+    "category_id": 12
+  },
+  {
+    "id": 295,
+    "part": 3,
+    "question_text": "What popular festivals are typical of your country's culture?",
+    "extra_text": null,
+    "category_id": 12
+  },
+  {
+    "id": 296,
+    "part": 3,
+    "question_text": "Why do some people find it difficult to make decisions?",
+    "extra_text": null,
+    "category_id": 14
+  },
+  {
+    "id": 297,
+    "part": 3,
+    "question_text": "What kinds of big decisions do people have to make in their lives?",
+    "extra_text": null,
+    "category_id": 14
+  },
+  {
+    "id": 298,
+    "part": 3,
+    "question_text": "Do you think people ought to get advice before making big decisions?",
+    "extra_text": null,
+    "category_id": 14
+  },
+  {
+    "id": 299,
+    "part": 3,
+    "question_text": "Do you think young people today have different types of decisions to make about their lives compared to young people in the past?",
+    "extra_text": null,
+    "category_id": 14
+  },
+  {
+    "id": 300,
+    "part": 3,
+    "question_text": "Should children be allowed to make decisions on their own?",
+    "extra_text": null,
+    "category_id": 14
+  },
+  {
+    "id": 301,
+    "part": 3,
+    "question_text": "What do you think about people who change their minds after making a decision?",
+    "extra_text": null,
+    "category_id": 14
+  },
+  {
+    "id": 302,
+    "part": 3,
+    "question_text": "What makes a good student?",
+    "extra_text": null,
+    "category_id": 16
+  },
+  {
+    "id": 303,
+    "part": 3,
+    "question_text": "What role should the teacher have in the classroom?",
+    "extra_text": null,
+    "category_id": 16
+  },
+  {
+    "id": 304,
+    "part": 3,
+    "question_text": "Do you think computers will one day replace teachers in the classroom?",
+    "extra_text": null,
+    "category_id": 16
+  },
+  {
+    "id": 305,
+    "part": 3,
+    "question_text": "How has teaching changed in your country in the last few decades?",
+    "extra_text": null,
+    "category_id": 16
+  },
+  {
+    "id": 306,
+    "part": 3,
+    "question_text": "What is the difference between the way children learn and the way adults learn?",
+    "extra_text": null,
+    "category_id": 16
+  },
+  {
+    "id": 307,
+    "part": 3,
+    "question_text": "How can a teacher make lessons for children more interesting?",
+    "extra_text": null,
+    "category_id": 16
+  },
+  {
+    "id": 308,
+    "part": 3,
+    "question_text": "What are the biggest environmental problems in your country?",
+    "extra_text": null,
+    "category_id": 18
+  },
+  {
+    "id": 309,
+    "part": 3,
+    "question_text": "What should individuals be doing to protect the natural environment?",
+    "extra_text": null,
+    "category_id": 18
+  },
+  {
+    "id": 310,
+    "part": 3,
+    "question_text": "Is pollution a problem in your country?",
+    "extra_text": null,
+    "category_id": 18
+  },
+  {
+    "id": 311,
+    "part": 3,
+    "question_text": "How could the government help prevent pollution?",
+    "extra_text": null,
+    "category_id": 18
+  },
+  {
+    "id": 312,
+    "part": 3,
+    "question_text": "Do you think young people today are more aware of environmental problems compared to the older generation?",
+    "extra_text": null,
+    "category_id": 18
+  },
+  {
+    "id": 313,
+    "part": 3,
+    "question_text": "Do you think it's important to protect trees?",
+    "extra_text": null,
+    "category_id": 18
+  },
+  {
+    "id": 314,
+    "part": 3,
+    "question_text": "Do you think more money should be spent on protecting wild animals?",
+    "extra_text": null,
+    "category_id": 18
+  },
+  {
+    "id": 315,
+    "part": 3,
+    "question_text": "Do you think zoos are important?",
+    "extra_text": null,
+    "category_id": 18
+  },
+  {
+    "id": 316,
+    "part": 3,
+    "question_text": "Is family important in your country?",
+    "extra_text": null,
+    "category_id": 21
+  },
+  {
+    "id": 317,
+    "part": 3,
+    "question_text": "How has the size of the family changed in the last few decades in your country?",
+    "extra_text": null,
+    "category_id": 21
+  },
+  {
+    "id": 318,
+    "part": 3,
+    "question_text": "How do you think the family will change in the future?",
+    "extra_text": null,
+    "category_id": 21
+  },
+  {
+    "id": 319,
+    "part": 3,
+    "question_text": "What role do grandparents play in the family in your country?",
+    "extra_text": null,
+    "category_id": 21
+  },
+  {
+    "id": 320,
+    "part": 3,
+    "question_text": "Who do you think should be responsible for the care of the elderly, the family or the government?",
+    "extra_text": null,
+    "category_id": 21
+  },
+  {
+    "id": 321,
+    "part": 3,
+    "question_text": "Do you think diet is important?",
+    "extra_text": null,
+    "category_id": 23
+  },
+  {
+    "id": 322,
+    "part": 3,
+    "question_text": "What is a balanced diet?",
+    "extra_text": null,
+    "category_id": 23
+  },
+  {
+    "id": 323,
+    "part": 3,
+    "question_text": "What is the typical diet of people in your country?",
+    "extra_text": null,
+    "category_id": 23
+  },
+  {
+    "id": 324,
+    "part": 3,
+    "question_text": "Do many people eat in restaurants in your country?",
+    "extra_text": null,
+    "category_id": 23
+  },
+  {
+    "id": 325,
+    "part": 3,
+    "question_text": "Why do some people enjoy eating out?",
+    "extra_text": null,
+    "category_id": 23
+  },
+  {
+    "id": 326,
+    "part": 3,
+    "question_text": "What's the difference between restaurant food and home cooked food?",
+    "extra_text": null,
+    "category_id": 23
+  },
+  {
+    "id": 327,
+    "part": 3,
+    "question_text": "How can people improve their health?",
+    "extra_text": null,
+    "category_id": 27
+  },
+  {
+    "id": 328,
+    "part": 3,
+    "question_text": "Do elderly people do much exercise in your country?",
+    "extra_text": null,
+    "category_id": 27
+  },
+  {
+    "id": 329,
+    "part": 3,
+    "question_text": "Do you think all illness can be prevented?",
+    "extra_text": null,
+    "category_id": 27
+  },
+  {
+    "id": 330,
+    "part": 3,
+    "question_text": "Do you think there will be less illness in the future?",
+    "extra_text": null,
+    "category_id": 27
+  },
+  {
+    "id": 331,
+    "part": 3,
+    "question_text": "Do you think health care should be free?",
+    "extra_text": null,
+    "category_id": 27
+  },
+  {
+    "id": 332,
+    "part": 3,
+    "question_text": "What makes a good doctor?",
+    "extra_text": null,
+    "category_id": 27
+  },
+  {
+    "id": 333,
+    "part": 3,
+    "question_text": "Do most people have a computer at home in your country?",
+    "extra_text": null,
+    "category_id": 31
+  },
+  {
+    "id": 334,
+    "part": 3,
+    "question_text": "Do you think all information on the internet is true?",
+    "extra_text": null,
+    "category_id": 31
+  },
+  {
+    "id": 335,
+    "part": 3,
+    "question_text": "How can people find reliable information on the internet?",
+    "extra_text": null,
+    "category_id": 31
+  },
+  {
+    "id": 336,
+    "part": 3,
+    "question_text": "How has the internet changed the way we live?",
+    "extra_text": null,
+    "category_id": 31
+  },
+  {
+    "id": 337,
+    "part": 3,
+    "question_text": "How has the internet changed the way we work?",
+    "extra_text": null,
+    "category_id": 31
+  },
+  {
+    "id": 338,
+    "part": 3,
+    "question_text": "Do you think the internet is safe for children to use unsupervised?",
+    "extra_text": null,
+    "category_id": 31
+  },
+  {
+    "id": 339,
+    "part": 3,
+    "question_text": "At what age should children start learning a foreign language?",
+    "extra_text": null,
+    "category_id": 34
+  },
+  {
+    "id": 340,
+    "part": 3,
+    "question_text": "Why do someone people struggle to learn a new language?",
+    "extra_text": null,
+    "category_id": 34
+  },
+  {
+    "id": 341,
+    "part": 3,
+    "question_text": "Do you think it's easier to learn a new language if you are in the country where the language is spoken?",
+    "extra_text": null,
+    "category_id": 34
+  },
+  {
+    "id": 342,
+    "part": 3,
+    "question_text": "What kinds of dictionaries do people use to learn a language?",
+    "extra_text": null,
+    "category_id": 34
+  },
+  {
+    "id": 343,
+    "part": 3,
+    "question_text": "Why do some people want to learn a new language?",
+    "extra_text": null,
+    "category_id": 34
+  },
+  {
+    "id": 344,
+    "part": 3,
+    "question_text": "Do you think it is important to learn the language of a country that you are visiting on holiday?",
+    "extra_text": null,
+    "category_id": 34
+  },
+  {
+    "id": 345,
+    "part": 3,
+    "question_text": "What traits does a good leader have?",
+    "extra_text": null,
+    "category_id": 36
+  },
+  {
+    "id": 346,
+    "part": 3,
+    "question_text": "Do you think leaders should be physically attractive?",
+    "extra_text": null,
+    "category_id": 36
+  },
+  {
+    "id": 347,
+    "part": 3,
+    "question_text": "Is there a leader in your country who is or has been greatly admired?",
+    "extra_text": null,
+    "category_id": 36
+  },
+  {
+    "id": 348,
+    "part": 3,
+    "question_text": "Why do some leaders loose popularity?",
+    "extra_text": null,
+    "category_id": 36
+  },
+  {
+    "id": 349,
+    "part": 3,
+    "question_text": "Do you think people are born to be a good leader or is it something someone can learn?",
+    "extra_text": null,
+    "category_id": 36
+  },
+  {
+    "id": 350,
+    "part": 3,
+    "question_text": "How could leadership be taught in schools?",
+    "extra_text": null,
+    "category_id": 36
+  },
+  {
+    "id": 351,
+    "part": 3,
+    "question_text": "Do you think leaders should be good listeners?",
+    "extra_text": null,
+    "category_id": 36
+  },
+  {
+    "id": 352,
+    "part": 3,
+    "question_text": "How do leaders motive people to follow them?",
+    "extra_text": null,
+    "category_id": 36
+  },
+  {
+    "id": 353,
+    "part": 3,
+    "question_text": "Do you believe everything you read in the newspapers?",
+    "extra_text": null,
+    "category_id": 38
+  },
+  {
+    "id": 354,
+    "part": 3,
+    "question_text": "How do most people get their news in your country?",
+    "extra_text": null,
+    "category_id": 38
+  },
+  {
+    "id": 355,
+    "part": 3,
+    "question_text": "How do you think people will get their news in the future?",
+    "extra_text": null,
+    "category_id": 38
+  },
+  {
+    "id": 356,
+    "part": 3,
+    "question_text": "How has TV changed our lives?",
+    "extra_text": null,
+    "category_id": 38
+  },
+  {
+    "id": 357,
+    "part": 3,
+    "question_text": "Do you think TV influences the way we think?",
+    "extra_text": null,
+    "category_id": 38
+  },
+  {
+    "id": 358,
+    "part": 3,
+    "question_text": "Should children be allowed to watch a lot of TV?",
+    "extra_text": null,
+    "category_id": 38
+  },
+  {
+    "id": 359,
+    "part": 3,
+    "question_text": "Are all people on TV famous?",
+    "extra_text": null,
+    "category_id": 38
+  },
+  {
+    "id": 360,
+    "part": 3,
+    "question_text": "Do you think famous people have a responsibility to act as role models for the younger generation?",
+    "extra_text": null,
+    "category_id": 38
+  },
+  {
+    "id": 361,
+    "part": 3,
+    "question_text": "Is going to the cinema to watch a movie popular in your country?",
+    "extra_text": null,
+    "category_id": 39
+  },
+  {
+    "id": 362,
+    "part": 3,
+    "question_text": "What kinds of films are popular in your country?",
+    "extra_text": null,
+    "category_id": 39
+  },
+  {
+    "id": 363,
+    "part": 3,
+    "question_text": "Do many people enjoy watching foreign films in your country?",
+    "extra_text": null,
+    "category_id": 39
+  },
+  {
+    "id": 364,
+    "part": 3,
+    "question_text": "Do you think it's better to have subtitles or dubbing in a foreign film?",
+    "extra_text": null,
+    "category_id": 39
+  },
+  {
+    "id": 365,
+    "part": 3,
+    "question_text": "What does it take for a film to become successful?",
+    "extra_text": null,
+    "category_id": 39
+  },
+  {
+    "id": 366,
+    "part": 3,
+    "question_text": "Which do you think are more important to the success of a film: the director or the stars?",
+    "extra_text": null,
+    "category_id": 39
+  },
+  {
+    "id": 367,
+    "part": 3,
+    "question_text": "Are drama series popular in your country?",
+    "extra_text": null,
+    "category_id": 39
+  },
+  {
+    "id": 368,
+    "part": 3,
+    "question_text": "Do you think people prefer watching films at home or in the cinema?",
+    "extra_text": null,
+    "category_id": 39
+  },
+  {
+    "id": 369,
+    "part": 3,
+    "question_text": "Are there any films which are not suitable for children to watch?",
+    "extra_text": null,
+    "category_id": 39
+  },
+  {
+    "id": 370,
+    "part": 3,
+    "question_text": "Do you think films about real life events should be 100% true to the actual facts?",
+    "extra_text": null,
+    "category_id": 39
+  },
+  {
+    "id": 371,
+    "part": 3,
+    "question_text": "What are the main environmental problems in your country?",
+    "extra_text": null,
+    "category_id": 41
+  },
+  {
+    "id": 372,
+    "part": 3,
+    "question_text": "Why should people be concerned about the environment?",
+    "extra_text": null,
+    "category_id": 41
+  },
+  {
+    "id": 373,
+    "part": 3,
+    "question_text": "How can people protect the environment?",
+    "extra_text": null,
+    "category_id": 41
+  },
+  {
+    "id": 374,
+    "part": 3,
+    "question_text": "Do you think money should be spent on protecting animals?",
+    "extra_text": null,
+    "category_id": 41
+  },
+  {
+    "id": 375,
+    "part": 3,
+    "question_text": "Do you think more should be done to protect natural beauty spots in your country?",
+    "extra_text": null,
+    "category_id": 41
+  },
+  {
+    "id": 376,
+    "part": 3,
+    "question_text": "Do many people like taking photos in your country?",
+    "extra_text": null,
+    "category_id": 48
+  },
+  {
+    "id": 377,
+    "part": 3,
+    "question_text": "Which device do they usually use to take photos?",
+    "extra_text": null,
+    "category_id": 48
+  },
+  {
+    "id": 378,
+    "part": 3,
+    "question_text": "What types of photos do people like to take?",
+    "extra_text": null,
+    "category_id": 48
+  },
+  {
+    "id": 379,
+    "part": 3,
+    "question_text": "What do you think of selfies?",
+    "extra_text": null,
+    "category_id": 48
+  },
+  {
+    "id": 380,
+    "part": 3,
+    "question_text": "Do you think it's ok to share photos online without people's permission?",
+    "extra_text": null,
+    "category_id": 48
+  },
+  {
+    "id": 381,
+    "part": 3,
+    "question_text": "What makes a good photo?",
+    "extra_text": null,
+    "category_id": 48
+  },
+  {
+    "id": 382,
+    "part": 3,
+    "question_text": "How does a photo differ from a painting?",
+    "extra_text": null,
+    "category_id": 48
+  },
+  {
+    "id": 383,
+    "part": 3,
+    "question_text": "Is it true that a photo can tell no lies?",
+    "extra_text": null,
+    "category_id": 48
+  },
+  {
+    "id": 384,
+    "part": 3,
+    "question_text": "What does it take to be a good photographer?",
+    "extra_text": null,
+    "category_id": 48
+  },
+  {
+    "id": 385,
+    "part": 3,
+    "question_text": "Is punctuality important in your country?",
+    "extra_text": null,
+    "category_id": 50
+  },
+  {
+    "id": 386,
+    "part": 3,
+    "question_text": "Do you think being on time is more important now than in the past?",
+    "extra_text": null,
+    "category_id": 50
+  },
+  {
+    "id": 387,
+    "part": 3,
+    "question_text": "How do people make sure they are on time for an appointment?",
+    "extra_text": null,
+    "category_id": 50
+  },
+  {
+    "id": 388,
+    "part": 3,
+    "question_text": "Do people in your country usually wear a watch?",
+    "extra_text": null,
+    "category_id": 50
+  },
+  {
+    "id": 389,
+    "part": 3,
+    "question_text": "Why do you think some people are frequently late?",
+    "extra_text": null,
+    "category_id": 50
+  },
+  {
+    "id": 390,
+    "part": 3,
+    "question_text": "Is it easy to control one's time?",
+    "extra_text": null,
+    "category_id": 50
+  },
+  {
+    "id": 391,
+    "part": 3,
+    "question_text": "How can a person balance their daily schedule?",
+    "extra_text": null,
+    "category_id": 50
+  },
+  {
+    "id": 392,
+    "part": 3,
+    "question_text": "What is the main reason people run out of time?",
+    "extra_text": null,
+    "category_id": 50
+  },
+  {
+    "id": 393,
+    "part": 3,
+    "question_text": "How do people in your country meet new people?",
+    "extra_text": null,
+    "category_id": 55
+  },
+  {
+    "id": 394,
+    "part": 3,
+    "question_text": "Do you think it's safe to meet new people online?",
+    "extra_text": null,
+    "category_id": 55
+  },
+  {
+    "id": 395,
+    "part": 3,
+    "question_text": "Do you think it's important for friends to spend time together?",
+    "extra_text": null,
+    "category_id": 55
+  },
+  {
+    "id": 396,
+    "part": 3,
+    "question_text": "What kinds of things do friends in your country like to do together?",
+    "extra_text": null,
+    "category_id": 55
+  },
+  {
+    "id": 397,
+    "part": 3,
+    "question_text": "Do you think families spend enough time together these days?",
+    "extra_text": null,
+    "category_id": 55
+  },
+  {
+    "id": 398,
+    "part": 3,
+    "question_text": "How has socialising changed over the last few decades?",
+    "extra_text": null,
+    "category_id": 55
+  },
+  {
+    "id": 399,
+    "part": 3,
+    "question_text": "Do you think it's safe for children to socialise online?",
+    "extra_text": null,
+    "category_id": 55
+  },
+  {
+    "id": 400,
+    "part": 3,
+    "question_text": "What social problems are there in your country?",
+    "extra_text": null,
+    "category_id": 56
+  },
+  {
+    "id": 401,
+    "part": 3,
+    "question_text": "What can be done to alleviate poverty?",
+    "extra_text": null,
+    "category_id": 56
+  },
+  {
+    "id": 402,
+    "part": 3,
+    "question_text": "Are there many charities in your country?",
+    "extra_text": null,
+    "category_id": 56
+  },
+  {
+    "id": 403,
+    "part": 3,
+    "question_text": "What is the difference between major crime and minor crime?",
+    "extra_text": null,
+    "category_id": 56
+  },
+  {
+    "id": 404,
+    "part": 3,
+    "question_text": "Do you think all criminals should go to prison?",
+    "extra_text": null,
+    "category_id": 56
+  },
+  {
+    "id": 405,
+    "part": 3,
+    "question_text": "Why do so many people move to live in cities?",
+    "extra_text": null,
+    "category_id": 56
+  },
+  {
+    "id": 406,
+    "part": 3,
+    "question_text": "What problems does over population cause?",
+    "extra_text": null,
+    "category_id": 56
+  },
+  {
+    "id": 407,
+    "part": 3,
+    "question_text": "What are popular toys for children in your country?",
+    "extra_text": null,
+    "category_id": 60
+  },
+  {
+    "id": 408,
+    "part": 3,
+    "question_text": "Have the toys for children changed over the last few decades?",
+    "extra_text": null,
+    "category_id": 60
+  },
+  {
+    "id": 409,
+    "part": 3,
+    "question_text": "Do you think boys and girls like the same toys?",
+    "extra_text": null,
+    "category_id": 60
+  },
+  {
+    "id": 410,
+    "part": 3,
+    "question_text": "Do you think it's ok for boys to play with toys made for girls?",
+    "extra_text": null,
+    "category_id": 60
+  },
+  {
+    "id": 411,
+    "part": 3,
+    "question_text": "What kinds of games do children like most?",
+    "extra_text": null,
+    "category_id": 60
+  },
+  {
+    "id": 412,
+    "part": 3,
+    "question_text": "Do you think games and toys are educational for children?",
+    "extra_text": null,
+    "category_id": 60
+  },
+  {
+    "id": 413,
+    "part": 3,
+    "question_text": "Do you think it's ok for children to spend a lot of time playing games on their devices?",
+    "extra_text": null,
+    "category_id": 60
+  },
+  {
+    "id": 414,
+    "part": 3,
+    "question_text": "What benefits can children gain from playing games with other children?",
+    "extra_text": null,
+    "category_id": 60
+  },
+  {
+    "id": 415,
+    "part": 3,
+    "question_text": "How do most people travel around cities in your country?",
+    "extra_text": null,
+    "category_id": 61
+  },
+  {
+    "id": 416,
+    "part": 3,
+    "question_text": "How do most people travel around your country?",
+    "extra_text": null,
+    "category_id": 61
+  },
+  {
+    "id": 417,
+    "part": 3,
+    "question_text": "What do you think of the public transportation in your country?",
+    "extra_text": null,
+    "category_id": 61
+  },
+  {
+    "id": 418,
+    "part": 3,
+    "question_text": "How could the public transportation be improved?",
+    "extra_text": null,
+    "category_id": 61
+  },
+  {
+    "id": 419,
+    "part": 3,
+    "question_text": "How has transport changed over the last few decades?",
+    "extra_text": null,
+    "category_id": 61
+  },
+  {
+    "id": 420,
+    "part": 3,
+    "question_text": "Do you think trains are better than buses?",
+    "extra_text": null,
+    "category_id": 61
+  },
+  {
+    "id": 421,
+    "part": 3,
+    "question_text": "What do you think of budget air travel?",
+    "extra_text": null,
+    "category_id": 61
+  },
+  {
+    "id": 422,
+    "part": 3,
+    "question_text": "Do you think all transport will one day be run on green energy?",
+    "extra_text": null,
+    "category_id": 61
+  },
+  {
+    "id": 423,
+    "part": 3,
+    "question_text": "Do you think people should walk more rather than use cars?",
+    "extra_text": null,
+    "category_id": 61
+  },
+  {
+    "id": 424,
+    "part": 3,
+    "question_text": "Why do some people prefer to travel abroad rather than in their own country?",
+    "extra_text": null,
+    "category_id": 62
+  },
+  {
+    "id": 425,
+    "part": 3,
+    "question_text": "Do you think traveling to another country can change the way people think?",
+    "extra_text": null,
+    "category_id": 62
+  },
+  {
+    "id": 426,
+    "part": 3,
+    "question_text": "Do you think it is good for children to experience life in a foreign country?",
+    "extra_text": null,
+    "category_id": 62
+  },
+  {
+    "id": 427,
+    "part": 3,
+    "question_text": "How have holidays changed over the past few decades?",
+    "extra_text": null,
+    "category_id": 62
+  },
+  {
+    "id": 428,
+    "part": 3,
+    "question_text": "Do you think it is safer to travel now than in the past?",
+    "extra_text": null,
+    "category_id": 62
+  },
+  {
+    "id": 429,
+    "part": 3,
+    "question_text": "How many seasons are there in your country?",
+    "extra_text": null,
+    "category_id": 67
+  },
+  {
+    "id": 430,
+    "part": 3,
+    "question_text": "Does your country ever have extreme weather?",
+    "extra_text": null,
+    "category_id": 67
+  },
+  {
+    "id": 431,
+    "part": 3,
+    "question_text": "Does weather ever disrupt things in your country?",
+    "extra_text": null,
+    "category_id": 67
+  },
+  {
+    "id": 432,
+    "part": 3,
+    "question_text": "Why do you think some people enjoy living in a hot climate?",
+    "extra_text": null,
+    "category_id": 67
+  },
+  {
+    "id": 433,
+    "part": 3,
+    "question_text": "What types of activities can people do in cold climates?",
+    "extra_text": null,
+    "category_id": 67
+  },
+  {
+    "id": 434,
+    "part": 3,
+    "question_text": "What do you think it must be like to live in a country with only one type of weather all year round?",
+    "extra_text": null,
+    "category_id": 67
+  },
+  {
+    "id": 435,
+    "part": 3,
+    "question_text": "Is the weather easy to predict in your country?",
+    "extra_text": null,
+    "category_id": 67
+  },
+  {
+    "id": 436,
+    "part": 3,
+    "question_text": "Do you think weather influences people's moods?",
+    "extra_text": null,
+    "category_id": 67
+  },
+  {
+    "id": 437,
+    "part": 3,
+    "question_text": "Do you think the world's climate is changing?",
+    "extra_text": null,
+    "category_id": 67
+  },
+  {
+    "id": 438,
+    "part": 3,
+    "question_text": "What do you think is affecting the world's climate?",
+    "extra_text": null,
+    "category_id": 67
+  },
+  {
+    "id": 439,
+    "part": 3,
+    "question_text": "Do you think individuals should take responsibility for the world's global climate?",
+    "extra_text": null,
+    "category_id": 67
+  },
+  {
+    "id": 440,
+    "part": 3,
+    "question_text": "Do you think job satisfaction is more important than salary when choosing a job?",
+    "extra_text": null,
+    "category_id": 68
+  },
+  {
+    "id": 441,
+    "part": 3,
+    "question_text": "What skills do you think are needed to get a good job these days?",
+    "extra_text": null,
+    "category_id": 68
+  },
+  {
+    "id": 442,
+    "part": 3,
+    "question_text": "Do you think women should be able to do all the same jobs that men do?",
+    "extra_text": null,
+    "category_id": 68
+  },
+  {
+    "id": 443,
+    "part": 3,
+    "question_text": "How has technology changed the way we work?",
+    "extra_text": null,
+    "category_id": 68
+  },
+  {
+    "id": 444,
+    "part": 3,
+    "question_text": "What is the difference between white collar and blue collar jobs?",
+    "extra_text": null,
+    "category_id": 68
+  },
+  {
+    "id": 445,
+    "part": 3,
+    "question_text": "What jobs do you think are most valuable to society?",
+    "extra_text": null,
+    "category_id": 68
+  },
+  {
+    "id": 446,
+    "part": 3,
+    "question_text": "At what age should people be allowed to retire?",
+    "extra_text": null,
+    "category_id": 68
+  }
+]
+
+
+
+

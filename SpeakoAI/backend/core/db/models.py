@@ -1,9 +1,8 @@
 import asyncio
 
+from backend.core.config import settings
 from sqlalchemy.ext.asyncio import AsyncAttrs, async_sessionmaker, create_async_engine
 from sqlalchemy.orm import DeclarativeBase
-
-from backend.core.config import settings
 
 print("🧠 [models.py] Loading database setup...")
 

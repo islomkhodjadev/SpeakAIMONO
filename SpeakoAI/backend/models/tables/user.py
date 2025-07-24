@@ -1,11 +1,10 @@
 
 import datetime
 
-from sqlalchemy import BigInteger, String, func
+from backend.core.db.models import Base
+from sqlalchemy import String, func
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy.types import DateTime
-
-from backend.core.db.models import Base
 
 
 class User(Base):
@@ -16,6 +15,6 @@ class User(Base):
     username: Mapped[str] = mapped_column(String(50), nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now())
 
-    # Relationships
+
     responses = relationship("UserResponse", back_populates="user")
     feedbacks = relationship("Feedback", back_populates="user")

@@ -39,12 +39,6 @@ async def get_questions_by_category(category: str):
     return await rq.get_questions_by_category(category)
 
 
-@router.get("/difficulty/{difficulty}", response_model=List[QuestionSchema])
-async def get_questions_by_difficulty(
-    difficulty: str = Path(..., regex="^(Easy|Medium|Hard)$")
-):
-    return await rq.get_questions_by_difficulty(difficulty)
-
 
 @router.put("/{question_id}", response_model=QuestionSchema)
 async def update_question(

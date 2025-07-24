@@ -1,17 +1,17 @@
 from typing import List, Optional
 
-from fastapi import HTTPException
-from sqlalchemy import select
-
 from backend.models.schemas.schemas import (
     UserResponseCreateSchema,
     UserResponseSchema,
     UserResponseUpdateSchema,
 )
-from backend.models.tables.question import Question
 from backend.models.tables.user import User
 from backend.models.tables.user_response import UserResponse
 from backend.services.conn import connection
+from fastapi import HTTPException
+from sqlalchemy import select
+
+
 @connection
 async def create_user_response(session, response_data: UserResponseCreateSchema) -> UserResponseCreateSchema:
     """Create a new user response"""

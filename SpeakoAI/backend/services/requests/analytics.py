@@ -1,7 +1,5 @@
 from typing import List, Optional
 
-from sqlalchemy import desc, func, select
-
 from backend.models.schemas.schemas import (
     QuestionSchema,
     QuestionWithResponsesSchema,
@@ -14,6 +12,7 @@ from backend.services.conn import connection
 
 # Analytics and Scoring Operations
 from backend.services.requests.user_response import get_responses_by_question
+from sqlalchemy import desc, func, select
 
 
 @connection
