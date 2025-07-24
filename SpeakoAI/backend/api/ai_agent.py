@@ -1,12 +1,15 @@
 import logging
-from typing import Optional
 
 import httpx
-from backend.models.schemas.schemas import ScoreScheme, StartScheme, UserResponseCreateSchema
+from backend.models.schemas.schemas import (
+    ScoreScheme,
+    StartScheme,
+    UserResponseCreateSchema,
+)
+from backend.services.requests.question import get_question
+from backend.services.requests.user_response import create_user_response
 from fastapi import APIRouter, File, Form, UploadFile
 from fastapi.responses import JSONResponse
-from backend.services.requests.user_response import create_user_response
-from backend.services.requests.question import get_question
 
 router = APIRouter(prefix="/api/ai", tags=["AI Agent"])
 

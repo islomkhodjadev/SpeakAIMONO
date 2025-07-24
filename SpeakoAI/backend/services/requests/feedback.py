@@ -1,8 +1,5 @@
 from typing import List, Optional
 
-from fastapi import HTTPException
-from sqlalchemy import select
-
 from backend.models.schemas.schemas import (
     FeedbackCreateSchema,
     FeedbackSchema,
@@ -11,6 +8,8 @@ from backend.models.schemas.schemas import (
 from backend.models.tables.feedback import Feedback
 from backend.models.tables.user import User
 from backend.services.conn import connection
+from fastapi import HTTPException
+from sqlalchemy import select
 
 
 # Feedback CRUD Operations

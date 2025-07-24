@@ -1,10 +1,9 @@
 import datetime
 
-from sqlalchemy import Float, ForeignKey, String, Text, func, Integer
+from backend.core.db.models import Base
+from sqlalchemy import ForeignKey, Integer, Text, func
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy.types import DateTime
-
-from backend.core.db.models import Base
 
 
 class UserResponse(Base):

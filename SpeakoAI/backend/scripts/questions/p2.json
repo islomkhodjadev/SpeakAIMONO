@@ -1,0 +1,205 @@
+[
+  {
+    "id": 215,
+    "part": 2,
+    "question_text": "Describe a piece of art you like.",
+    "extra_text": "You should say:\n\nwhat the work of art is\nwhen you first saw it\nwhat you know about it\nand explain why you like it.",
+    "category_id": 2
+  },
+  {
+    "id": 216,
+    "part": 2,
+    "question_text": "Describe a book you have recently read.",
+    "extra_text": "You should say:\n\nwhat kind of book it is\nwhat it is about\nwhat sort of people would enjoy it\nand explain why you liked it.",
+    "category_id": 5
+  },
+  {
+    "id": 217,
+    "part": 2,
+    "question_text": "Describe a piece of advice you recently received.",
+    "extra_text": "You should say:\n\nwhen this happened\nwho gave you the advice\nwhat the advice was\nand explain how you felt about the advice.",
+    "category_id": 10
+  },
+  {
+    "id": 218,
+    "part": 2,
+    "question_text": "Describe a time of the day you like.",
+    "extra_text": "You should say:\n\nwhat time of day it is\nwhat you do at that time\nwho you are usually with\nand explain why you like it.",
+    "category_id": 13
+  },
+  {
+    "id": 219,
+    "part": 2,
+    "question_text": "Describe a time you were embarrassed.",
+    "extra_text": "You should say:\n\nwhen it was\nwho you were with\nwhat happened\nand how you coped afterwards",
+    "category_id": 17
+  },
+  {
+    "id": 220,
+    "part": 2,
+    "question_text": "Describe an exercise you know.",
+    "extra_text": "You should say:\n\nwhat it is\nhow it is done\nwhen you first tried it\nwhat kind of people it is suitable for\nand explain why you think it is a good exercise.",
+    "category_id": 20
+  },
+  {
+    "id": 221,
+    "part": 2,
+    "question_text": "Describe a member of the your family you get on well with.",
+    "extra_text": "You should say:\n\nwho it is\nwhat relationship you have to that person\nwhat that person is like\nwhat you do together\nand explain why you get on so well.",
+    "category_id": 21
+  },
+  {
+    "id": 222,
+    "part": 2,
+    "question_text": "Describe a gift you recently gave to someone.",
+    "extra_text": "You should say:\n\nwho you gave it to\nwhat kind of person he/she is\nwhat the gift was\nwhat occasion the gift was for\nand explain why you chose that gift.",
+    "category_id": 24
+  },
+  {
+    "id": 223,
+    "part": 2,
+    "question_text": "Describe an interesting hobby.",
+    "extra_text": "You should say:\n\nwhat it is\nwhat kind of people do it\nhow it is done\nand explain why you think it is interesting.",
+    "category_id": 28
+  },
+  {
+    "id": 224,
+    "part": 2,
+    "question_text": "Describe a useful website.",
+    "extra_text": "You should say:\n\nwhat it is\nhow often you visit it\nwhat kind of site it is\nwhat kind of information it offers\nand explain why you think it is useful.",
+    "category_id": 31
+  },
+  {
+    "id": 225,
+    "part": 2,
+    "question_text": "Describe a journey that didn't go as planned.",
+    "extra_text": "You should say:\n\nwhere you were going\nhow you were travelling\nwho you were with\nwhat went wrong\nand explain what you would do differently.",
+    "category_id": 32
+  },
+  {
+    "id": 226,
+    "part": 2,
+    "question_text": "Describe a person you know who is kind.",
+    "extra_text": "You should say:\n\nwho it is\nhow you know this person\nwhat sort of person he/she is\nand explain why you think they are kind.",
+    "category_id": 33
+  },
+  {
+    "id": 227,
+    "part": 2,
+    "question_text": "Describe a language you have learned.",
+    "extra_text": "You should say:\n\nwhat it is\nwhen you started learning\nhow you learned it\nwhat was difficult about it\nand why you decided to learn that language.",
+    "category_id": 34
+  },
+  {
+    "id": 228,
+    "part": 2,
+    "question_text": "Describe a good law.",
+    "extra_text": "You should say:\n\nwhat it is\nwho is affected by it\nand why you think it is good.",
+    "category_id": 35
+  },
+  {
+    "id": 229,
+    "part": 2,
+    "question_text": "Describe a song you like.",
+    "extra_text": "You should say:\n\nwhat kind of song it is\nwhat the song is about\nwhen you first heard it\nand explain why you like it.",
+    "category_id": 40
+  },
+  {
+    "id": 230,
+    "part": 2,
+    "question_text": "Describe some good news you recently received.",
+    "extra_text": "You should say:\n\nwhat the news was\nhow you received the news\nwho gave it to you\nand explain why this was good news.",
+    "category_id": 43
+  },
+  {
+    "id": 231,
+    "part": 2,
+    "question_text": "Describe an old person you know.",
+    "extra_text": "You should say:\n\nwho this person is\nhow old he/she is\nwhat this person is like\nand explain why you like this person.",
+    "category_id": 45
+  },
+  {
+    "id": 232,
+    "part": 2,
+    "question_text": "Describe a place that you find peaceful.",
+    "extra_text": "You should say:\n\nwhere it is\nwhen you first went there\nwhat you do there\nand why you like it",
+    "category_id": 46
+  },
+  {
+    "id": 233,
+    "part": 2,
+    "question_text": "Describe a photograph you like.",
+    "extra_text": "You should say:\n\nwhat can be seen in the photo\nwhen it was taken\nwho took it\nand explain why you like it.",
+    "category_id": 49
+  },
+  {
+    "id": 234,
+    "part": 2,
+    "question_text": "Describe something you do to relax.",
+    "extra_text": "You should say:\n\nwhat it is\nwhere you do it\nwhen you first did it\nand why you find it relaxing.",
+    "category_id": 52
+  },
+  {
+    "id": 235,
+    "part": 2,
+    "question_text": "Describe someone you respect.",
+    "extra_text": "You should say:\n\nwho the person is\nhow you know about this person\nwhat this person does\nwhat this person is like\nand explain why you respect this person.",
+    "category_id": 53
+  },
+  {
+    "id": 236,
+    "part": 2,
+    "question_text": "Describe a sports you would like to learn.",
+    "extra_text": "You should say:\n\nwhat it is\nwhat equipment is needed for it\nhow you would learn it\nand explain why you would like to learn this sport.",
+    "category_id": 57
+  },
+  {
+    "id": 237,
+    "part": 2,
+    "question_text": "Describe your favourite time of day",
+    "extra_text": "You should say:\n\nwhen it is\nwhat you like to do\nand why it is different to other parts of the day",
+    "category_id": 59
+  },
+  {
+    "id": 238,
+    "part": 2,
+    "question_text": "Describe a place you have recently visited.",
+    "extra_text": "You should say:\n\nwhere you went\nwho you went with\nhow you got there\nand explain why you enjoyed it.",
+    "category_id": 62
+  },
+  {
+    "id": 239,
+    "part": 2,
+    "question_text": "Describe an unexpected event.",
+    "extra_text": "You should say:\n\nwhat it was\nwhen it happened\nwho was there\nwhy it was unexpected\nand explain why you enjoyed it.",
+    "category_id": 64
+  },
+  {
+    "id": 240,
+    "part": 2,
+    "question_text": "Describe a vocation you think is useful to society.",
+    "extra_text": "You should say:\n\nwhat it is\nwhat it involves\nwhat kind of people usually do this work\nand explain why you think it is useful to society.",
+    "category_id": 65
+  },
+  {
+    "id": 241,
+    "part": 2,
+    "question_text": "Describe a place near water.",
+    "extra_text": "You should say:\n\nwhere it is\nhow you get there\nhow often you do there\nwhat you can do there\nand explain why you like it.",
+    "category_id": 66
+  },
+  {
+    "id": 242,
+    "part": 2,
+    "question_text": "Describe your favourite shop.",
+    "extra_text": "You should say:\n\nwhere it is\nhow often you go there\nwhat it sells\nand explain why you think it is a good shop.",
+    "category_id": 69
+  },
+  {
+    "id": 243,
+    "part": 2,
+    "question_text": "Describe a place with animals.",
+    "extra_text": "You should say:\n\nwhere it is\nhow you heard of it\nwhat animals can be seen\nand explain why it might be an interesting place to visit.",
+    "category_id": 70
+  }
+]

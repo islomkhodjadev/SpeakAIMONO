@@ -1,43 +1,9 @@
+
+
 from datetime import datetime
 from typing import List, Optional
 
 from pydantic import BaseModel, ConfigDict, Field
-
-
-class QuestionSchema(BaseModel):
-    id: int
-    part: int = Field(..., ge=1, le=3, description="IELTS speaking part (1, 2, or 3)")
-    question_text: str
-    category_id: Optional[int] = None
-    created_at: datetime
-
-    model_config = ConfigDict(from_attributes=True)
-
-
-class CategorySchema(BaseModel):
-    id: int
-    name: str
-
-    created_at: datetime
-
-    model_config = ConfigDict(from_attributes=True)
-
-
-class QuestionCreateSchema(BaseModel):
-    part: int = Field(..., ge=1, le=3, description="IELTS speaking part (1, 2, or 3)")
-    question_text: str = Field(..., min_length=10, description="The question text")
-    category_id: Optional[int] = None
-class CategoryCreateSchema(BaseModel):
-    name: str
-
-
-class QuestionUpdateSchema(BaseModel):
-    part: Optional[int] = Field(None, ge=1, le=3)
-    question_text: Optional[str] = Field(None, min_length=10)
-    category_id: Optional[int] = None
-
-class CategoryUpdateSchema(BaseModel):
-    name: Optional[str] = Field(None, min_length=10)
 
 
 class UserSchema(BaseModel):
@@ -48,6 +14,8 @@ class UserSchema(BaseModel):
     created_at: datetime
 
     model_config = ConfigDict(from_attributes=True)
+
+
 
 
 class UserCreateSchema(BaseModel):
@@ -92,22 +60,7 @@ class UserResponseUpdateSchema(BaseModel):
     ai_feedback: Optional[str] = None
 
 
-class FeedbackSchema(BaseModel):
-    id: int
-    user_id: int
-    ai_comment: str
-    created_at: datetime
 
-    model_config = ConfigDict(from_attributes=True)
-
-
-class FeedbackCreateSchema(BaseModel):
-    user_id: int
-    ai_comment: str = Field(..., min_length=10)
-
-
-class FeedbackUpdateSchema(BaseModel):
-    ai_comment: str = Field(..., min_length=10)
 
 
 class UserScoreSchema(BaseModel):
@@ -121,50 +74,3 @@ class UserScoreSchema(BaseModel):
     average_vocabulary_score: Optional[float] = None
     best_score: Optional[float] = None
     recent_scores: List[float] = []
-
-
-class QuestionWithResponsesSchema(BaseModel):
-    question: QuestionSchema
-    responses: List[UserResponseSchema] = []
-    total_responses: int = 0
-
-
-class ScoreRequests(BaseModel):
-    question:str
-    answer: str
-    part: int
-
-
-
-
-
-
-
-
-
-
-class ScoreResponse(BaseModel):
-    score:str
-
-
-
-
-
-
-
-class AddAnswerScheme(BaseModel):
-    answer: Optional[str]
-    part: int
-    question: Optional[str]
-    user_id: str
-
-
-
-class StartScheme(BaseModel):
-
-    user_id: str
-
-class ScoreScheme(BaseModel):
-
-    user_id: str
-
