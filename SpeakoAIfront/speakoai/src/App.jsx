@@ -243,6 +243,7 @@ export default function App() {
           onNextQuestion={handleNext}
           onEvaluate={handleEvaluate}
           loading={loading}
+          isMockMode={mode === 'MOCK'} 
         />
       )}
       {screen === screens.FEEDBACK && (

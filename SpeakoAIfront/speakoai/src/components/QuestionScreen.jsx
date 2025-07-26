@@ -10,7 +10,7 @@ function getPartNumber(part) {
     return 1;
 }
 
-export default function QuestionScreen({ part, question, questionId, onAnswerSent, onNextQuestion, onEvaluate, loading }) {
+export default function QuestionScreen({ part, question, questionId, onAnswerSent, onNextQuestion, onEvaluate, loading,isMockMode  }) {
     const [isRecording, setIsRecording] = useState(false);
     const [mediaRecorder, setMediaRecorder] = useState(null);
     const [audioURL, setAudioURL] = useState(null);
@@ -128,24 +128,28 @@ export default function QuestionScreen({ part, question, questionId, onAnswerSen
                         Next
                     </button>
                 )}
+             {((isMockMode && getPartNumber(part) === 3) || !isMockMode) && (
                 <button
                     className={`w-32 py-3 rounded-xl bg-purple-600 text-white font-semibold transition hover:bg-purple-700 mt-2 shadow-lg active:scale-95 focus:outline-none border-b-4 border-purple-800 ${(sending || loading || isRecording) ? 'opacity-60 cursor-not-allowed' : ''}`}
                     onClick={onEvaluate}
                     disabled={sending || loading || isRecording}
                 >
                     {loading ? (
-                        <span className="flex items-center justify-center">
-                            <span>Evaluate</span>
-                            <span className="flex space-x-1 ml-2">
-                                <span className="inline-block w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: '0s' }}></span>
-                                <span className="inline-block w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></span>
-                                <span className="inline-block w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></span>
-                            </span>
+                    <span className="flex items-center justify-center">
+                        <span>Evaluate</span>
+                        <span className="flex space-x-1 ml-2">
+                        <span className="inline-block w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: '0s' }}></span>
+                        <span className="inline-block w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></span>
+                        <span className="inline-block w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></span>
                         </span>
+                    </span>
                     ) : (
-                        'Evaluate'
+                    'Evaluate'
                     )}
                 </button>
+                )}
+
+
             </div>
         </div>
     );
