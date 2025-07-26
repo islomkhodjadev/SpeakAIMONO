@@ -1,40 +1,62 @@
 
 # 🧠 SpeakAI Mini App — Dev Setup
 
-## 🛠️ Project Guidelines
+## ⚙️ Project Setup Guidelines
 
-1. `.env` file **must be placed in the root directory only**.
-2. To populate the PostgreSQL database from PowerShell, run:
-
-   ```bash
-   Get-Content ./archive/populate_mock_data_fixed.sql | docker exec -i speakoai-db psql -U postgres -d miniapp
-   ```
-3. ⚠️ **Avoid adding unnecessary files** outside the frontend directory. Keep the repo clean and organized.
+> **Heads Up:**
+> `.env` file **must be placed in the project root directory** — no exceptions.
 
 
 
-## 🌐 Project URLs (Local)
+### 🧪 Load questions from JSON into DB
 
-* **Frontend:** [http://localhost:3000/](http://localhost:3000/)
-* **AI Agent (Whisper + GPT):** [http://localhost:8085/swagger/index.html](http://localhost:8085/swagger/index.html)
-* **Backend API (FastAPI):** [http://localhost:8000/docs](http://localhost:8000/docs)
+Inside the **backend container**, execute: - > this fulls your db with questions and categories
 
+```bash
+cd /app
+PYTHONPATH=. python SpeakoAI/backend/scripts/json2db.py
+```
+```bash
+cd /app
+PYTHONPATH=. python SpeakoAI/backend/scripts/json2db_cat.py
+
+```
+
+To be able to create categories and questions through swagger:
+
+```bash
+SELECT setval('categories_id_seq', (SELECT MAX(id) FROM categories));
+SELECT setval('questions_id_seq', (SELECT MAX(id) FROM questions));
+```
 ---
 
 
 
 
+## 🌐 Local Project URLs
 
-## 🚀 ruff usage
+| Service        | URL                                                                                  |
+| -------------- | ------------------------------------------------------------------------------------ |
+| 🖥️ Frontend   | [http://localhost:3000/](http://localhost:3000/)                                     |
+| 🤖 AI Agent    | [http://localhost:8085/swagger/index.html](http://localhost:8085/swagger/index.html) |
+| 🧩 Backend API | [http://localhost:8000/docs](http://localhost:8000/docs)                             |
 
-Check and fix all files:
+---
+
+## ✨ Code Quality with `ruff`
+
+### Lint & Auto-fix
 
 ```bash
 ruff check . --fix
 ```
 
-Or format code (like `black`):
+### Format Code (like `black`)
 
 ```bash
 ruff format .
 ```
+
+---
+
+Let me know if you want badges, license, docker instructions, or contributor section added. This is lean, but sharp.
