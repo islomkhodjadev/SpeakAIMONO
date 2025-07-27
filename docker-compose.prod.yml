@@ -1,0 +1,170 @@
+version: "3.8"
+
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: miniapp-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - miniapp-api
+      - frontend
+    restart: unless-stopped
+    networks:
+      - speakoai-network
+
+  telegram-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: miniapp-telegram-bot
+    command: python SpeakoAI/backend/telegram_bot.py
+    env_file:
+      - .env.prod
+    environment:
+      - PYTHONPATH=/app/SpeakoAI
+    depends_on:
+      - miniapp-api
+      - redis
+    restart: unless-stopped
+    networks:
+      - speakoai-network
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  miniapp-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: miniapp-api
+    command: gunicorn backend.main:app -w 2 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000
+    expose:
+      - "8000"
+    env_file:
+      - .env.prod
+    environment:
+      - PYTHONPATH=/app/SpeakoAI
+    depends_on:
+      - db
+      - redis
+      - ai-agent
+    restart: unless-stopped
+    networks:
+      - speakoai-network
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8000/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  ai-agent:
+    build:
+      context: ./SpeakoAI/ai-agent
+      dockerfile: Dockerfile
+    container_name: miniapp-ai-agent
+    expose:
+      - "8085"
+    env_file:
+      - .env.prod
+    depends_on:
+      - redis
+    restart: unless-stopped
+    networks:
+      - speakoai-network
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  frontend:
+    build:
+      context: ./SpeakoAIfront/speakoai
+      dockerfile: Dockerfile
+      args:
+        - VITE_API_BASE_URL=${API_BASE_URL}
+    container_name: miniapp-frontend
+    expose:
+      - "3000"
+    depends_on:
+      - miniapp-api
+    restart: unless-stopped
+    networks:
+      - speakoai-network
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  db:
+    image: postgres:15-alpine
+    container_name: miniapp-db
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./SpeakoAI/populate_mock_data_fixed.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    expose:
+      - "5432"
+    restart: unless-stopped
+    networks:
+      - speakoai-network
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  redis:
+    image: redis:7-alpine
+    container_name: miniapp-redis
+    expose:
+      - "6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    networks:
+      - speakoai-network
+    healthcheck:
+      test: [ "CMD", "redis-cli", "ping" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  pgdata:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  speakoai-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
