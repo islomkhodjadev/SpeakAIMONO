@@ -2,3 +2,4 @@ venv
 .env
 .idea
 temp_audio
+archive
